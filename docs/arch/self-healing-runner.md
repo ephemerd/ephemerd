@@ -55,7 +55,7 @@ Two things made it a day instead of a minute:
 ghcr.io/actions/actions-runner:latest`, so the image carries its own
 runner at `/home/runner` (owned by the image's unprivileged `runner` user,
 uid/gid 1001, which is also the `USER` the container runs as).
-`pkg/runtime.isOfficialRunnerImage` lists `ephpm/ephemerd:runner-ci-linux`
+`pkg/runtime.isOfficialRunnerImage` lists `ephemerd/ephemerd:runner-ci-linux`
 as official, and for an official image `runtime.Create`:
 
 - runs `/home/runner/run.sh --jitconfig …` straight from the image;
@@ -240,7 +240,7 @@ They do not replace the pin, and the alert says so until they do.
 ## Signed manifest
 
 A small JSON document published out-of-band (a GitHub release asset on
-`ephpm/ephemerd` under a `runner-manifest/<n>` tag, or any HTTPS URL)
+`ephemerd/ephemerd` under a `runner-manifest/<n>` tag, or any HTTPS URL)
 alongside a detached signature. ephemerd trusts the manifest only because
 the embedded public key verifies the signature.
 
@@ -729,7 +729,7 @@ permission.
 - **Auto-open a PR** (designed, not yet implemented): the host daemon
   uses its GitHub credential (the same App installation that mints JIT
   configs; it needs `contents:write` + `pull_requests:write` on
-  `ephpm/ephemerd`, which is an installation-permission change to make
+  `ephemerd/ephemerd`, which is an installation-permission change to make
   consciously) to push a branch `auto/runner-pin-<version>` that updates
   `RunnerVersion` and the five `pinnedSHA256` entries with the SHAs it
   verified (from GitHub `runners/downloads`, cross-checked against the
@@ -795,7 +795,7 @@ defaults.
 ```toml
 [runner.self_heal]
 enabled = true                 # THE KILL-SWITCH. false turns everything below off without a redeploy
-manifest_url = "https://github.com/ephpm/ephemerd/releases/download/runner-manifest/runner-manifest.json"
+manifest_url = "https://github.com/ephemerd/ephemerd/releases/download/runner-manifest/runner-manifest.json"
                                # ".minisig" is appended for the signature
 public_key = ""                # override the compiled-in minisign public key (base64 line); rotation/testing only
 channel = "stable"             # "stable" | "canary"; manifests for the other channel are ignored
@@ -807,7 +807,7 @@ image_override = true          # Linux: mount a verified newer runner over a sta
 auto_upgrade = true            # break-glass two-source verified fetch
 max_archive_mb = 512           # refuse larger downloads
 min_free_gb = 5                # refuse to fetch below this much free space on the cache volume
-auto_upgrade_pr_repo = ""      # "ephpm/ephemerd"; empty disables the auto-PR (not implemented yet)
+auto_upgrade_pr_repo = ""      # "ephemerd/ephemerd"; empty disables the auto-PR (not implemented yet)
 auto_upgrade_pr_deadline = "72h"
 ```
 
@@ -903,7 +903,7 @@ logs "no verified manifest yet" hourly and self-heals on the breaker path
 only.
 
 1. **Add the signing secret.** The repository secret
-   `RUNNER_MANIFEST_MINISIGN_KEY` on `ephpm/ephemerd` is the contents of
+   `RUNNER_MANIFEST_MINISIGN_KEY` on `ephemerd/ephemerd` is the contents of
    the `runner-manifest.key` file that pairs with the compiled-in public
    key (`CCFDB74C12C7F433`). It was generated off-repo; it is never
    committed. If it is lost, rotate (see Signing).

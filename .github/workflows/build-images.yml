@@ -2,8 +2,8 @@
 #
 # Trigger manually or on changes to Dockerfiles / version bumps.
 # Each image gets a latest tag and a date-stamped tag:
-#   ephpm/ephemerd:runner-ci-linux
-#   ephpm/ephemerd:runner-ci-linux-20260418
+#   ephemerd/ephemerd:runner-ci-linux
+#   ephemerd/ephemerd:runner-ci-linux-20260418
 #
 # Linux builds run natively on both amd64 and arm64 self-hosted runners,
 # then merge into a multi-arch manifest. No QEMU emulation needed.
@@ -19,7 +19,7 @@ on:
       - "mage/download/download.go"
 
 env:
-  IMAGE_REPO: ephpm/ephemerd
+  IMAGE_REPO: ephemerd/ephemerd
 
 jobs:
   linux:

@@ -37,7 +37,7 @@ type SelfHealToml struct {
 	// ManifestURL is the https URL of runner-manifest.json. The detached
 	// signature is fetched from ManifestURL + ".minisig". Default:
 	// DefaultSelfHealManifestURL, the stable release asset published by
-	// the runner-manifest workflow on ephpm/ephemerd.
+	// the runner-manifest workflow on ephemerd/ephemerd.
 	ManifestURL string `toml:"manifest_url"`
 
 	// PublicKey overrides the minisign public key compiled into ephemerd
@@ -105,10 +105,10 @@ type SelfHealToml struct {
 
 const (
 	// DefaultSelfHealManifestURL is where the runner-manifest workflow on
-	// ephpm/ephemerd publishes the signed manifest: a stable, overwritten
+	// ephemerd/ephemerd publishes the signed manifest: a stable, overwritten
 	// release asset (tag "runner-manifest"), so the URL never changes and
 	// no node config needs to name it.
-	DefaultSelfHealManifestURL = "https://github.com/ephpm/ephemerd/releases/download/runner-manifest/runner-manifest.json"
+	DefaultSelfHealManifestURL = "https://github.com/ephemerd/ephemerd/releases/download/runner-manifest/runner-manifest.json"
 
 	// DefaultSelfHealPollInterval is the backstop cadence; failure is the
 	// primary trigger (Detector.OnDegraded -> Controller.Kick).

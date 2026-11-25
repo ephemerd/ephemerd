@@ -6,8 +6,8 @@ import (
 	"log/slog"
 
 	"github.com/containerd/containerd/v2/client"
-	"github.com/ephpm/ephemerd/pkg/containerd"
-	"github.com/ephpm/ephemerd/pkg/scheduler"
+	"github.com/ephemerd/ephemerd/pkg/containerd"
+	"github.com/ephemerd/ephemerd/pkg/scheduler"
 )
 
 // startContainerRuntime starts an in-process containerd server on Linux.

@@ -359,7 +359,7 @@ func TestCachePath_AcceptsRealModulePaths(t *testing.T) {
 
 	paths := []string{
 		"/example.com/mod/@v/v1.0.0.zip",
-		"/github.com/ephpm/ephemerd/@v/v0.1.7.info",
+		"/github.com/ephemerd/ephemerd/@v/v0.1.7.info",
 		"/github.com/!burnt!sushi/toml/@v/v1.4.0.mod",
 		"/gopkg.in/yaml.v3/@v/v3.0.1.zip",
 		"/github.com/some/mod/v2/@v/v2.1.0-rc.1.zip",

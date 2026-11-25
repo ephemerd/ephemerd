@@ -9,8 +9,8 @@ import (
 	"testing"
 	"time"
 
-	apiv1 "github.com/ephpm/ephemerd/api/v1"
-	"github.com/ephpm/ephemerd/pkg/runtime"
+	apiv1 "github.com/ephemerd/ephemerd/api/v1"
+	"github.com/ephemerd/ephemerd/pkg/runtime"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/metadata"

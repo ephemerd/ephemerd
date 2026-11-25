@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ephpm/ephemerd/pkg/diskspace"
+	"github.com/ephemerd/ephemerd/pkg/diskspace"
 )
 
 const gib = uint64(1024 * 1024 * 1024)

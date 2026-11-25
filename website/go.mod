@@ -1,4 +1,4 @@
-module github.com/ephpm/ephemerd/website
+module github.com/ephemerd/ephemerd/website
 
 go 1.26.1
 

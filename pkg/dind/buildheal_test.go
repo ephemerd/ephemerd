@@ -6,7 +6,7 @@ import (
 	"slices"
 	"testing"
 
-	"github.com/ephpm/ephemerd/pkg/buildkit"
+	"github.com/ephemerd/ephemerd/pkg/buildkit"
 )
 
 // TestBuildExportUnpacksSoLayersArePinned locks in the fix for the

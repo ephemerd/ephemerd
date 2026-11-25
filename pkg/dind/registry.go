@@ -27,7 +27,7 @@ import (
 	"github.com/containerd/containerd/v2/client"
 	"github.com/containerd/containerd/v2/core/remotes/docker"
 	"github.com/containerd/containerd/v2/pkg/namespaces"
-	"github.com/ephpm/ephemerd/pkg/registrymirror"
+	"github.com/ephemerd/ephemerd/pkg/registrymirror"
 )
 
 // authConfig is the JSON body docker CLI sends to POST /auth and embeds
@@ -133,7 +133,7 @@ func (s *Server) handleAuth(w http.ResponseWriter, r *http.Request) {
 
 // handleImagePush is POST /images/{ref}/push.
 //
-// `ref` in the URL is the image name without tag (e.g. "ephpm/ephemerd").
+// `ref` in the URL is the image name without tag (e.g. "ephemerd/ephemerd").
 // Docker CLI sends the tag as a query parameter. The full reference looked
 // up in containerd is "<ref>:<tag>". X-Registry-Auth carries credentials
 // base64-encoded; we fall back to the auth cache populated by handleAuth.
@@ -234,7 +234,7 @@ func (s *Server) handleImagePush(w http.ResponseWriter, r *http.Request, refPath
 	emit(fmt.Sprintf("Pushing %s", fullRef), tag)
 
 	// containerd's resolver treats the first path segment of an unqualified
-	// reference as the registry hostname, so "ephpm/ephemerd:tag" tries to
+	// reference as the registry hostname, so "ephemerd/ephemerd:tag" tries to
 	// dial "ephpm". Force the docker.io qualifier when the ref carries no
 	// explicit host. The local image was stored under the unqualified name
 	// (Docker CLI hands /build the unqualified -t arg verbatim), so GetImage
@@ -374,7 +374,7 @@ func tailHex(s string) string {
 
 // qualifyDockerHubRef ensures a reference carries an explicit registry
 // host. containerd's resolver treats the first path segment of an
-// unqualified reference as the hostname (so "ephpm/ephemerd:tag" → host
+// unqualified reference as the hostname (so "ephemerd/ephemerd:tag" → host
 // "ephpm" → DNS lookup fails; "alpine:3.20" → host "alpine", port "3.20"
 // → url.Parse rejects). Docker CLI conventions default unqualified refs
 // to docker.io, prepending "library/" for single-segment names like
@@ -405,7 +405,7 @@ func qualifyDockerHubRef(ref string) string {
 }
 
 // registryHostFromRef peels the registry hostname off a fully-qualified
-// reference. References without an explicit host (e.g. "ephpm/ephemerd")
+// reference. References without an explicit host (e.g. "ephemerd/ephemerd")
 // are assumed to be on Docker Hub.
 func registryHostFromRef(ref string) string {
 	// Strip tag/digest.

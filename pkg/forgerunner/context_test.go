@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/ephpm/ephemerd/pkg/forgerpc"
+	"github.com/ephemerd/ephemerd/pkg/forgerpc"
 )
 
 func TestBuildEnv(t *testing.T) {

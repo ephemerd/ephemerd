@@ -1,10 +1,10 @@
 # ephemerd
 
 <p align="center">
-  <a href="https://github.com/ephpm/ephemerd/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/ephpm/ephemerd/ci.yml?branch=main&style=flat-square&logo=githubactions&logoColor=white&label=CI" alt="CI"></a>
-  <a href="https://github.com/ephpm/ephemerd/releases/latest"><img src="https://img.shields.io/github/v/release/ephpm/ephemerd?style=flat-square&logo=github&label=Release" alt="Release"></a>
-  <a href="https://github.com/ephpm/ephemerd/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ephpm/ephemerd?style=flat-square" alt="License"></a>
-  <a href="https://pkg.go.dev/github.com/ephpm/ephemerd"><img src="https://img.shields.io/badge/Go-1.26+-00ADD8?style=flat-square&logo=go&logoColor=white" alt="Go"></a>
+  <a href="https://github.com/ephemerd/ephemerd/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/ephemerd/ephemerd/ci.yml?branch=main&style=flat-square&logo=githubactions&logoColor=white&label=CI" alt="CI"></a>
+  <a href="https://github.com/ephemerd/ephemerd/releases/latest"><img src="https://img.shields.io/github/v/release/ephemerd/ephemerd?style=flat-square&logo=github&label=Release" alt="Release"></a>
+  <a href="https://github.com/ephemerd/ephemerd/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ephemerd/ephemerd?style=flat-square" alt="License"></a>
+  <a href="https://pkg.go.dev/github.com/ephemerd/ephemerd"><img src="https://img.shields.io/badge/Go-1.26+-00ADD8?style=flat-square&logo=go&logoColor=white" alt="Go"></a>
   <br>
   <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux">
   <img src="https://img.shields.io/badge/Windows-0078D4?style=flat-square&logo=windows&logoColor=white" alt="Windows">
@@ -187,7 +187,7 @@ A single machine can serve multiple job types:
 
 ### 1. Install
 
-Download the latest binary from [Releases](https://github.com/ephpm/ephemerd/releases), then:
+Download the latest binary from [Releases](https://github.com/ephemerd/ephemerd/releases), then:
 
 ```bash
 sudo ./ephemerd install

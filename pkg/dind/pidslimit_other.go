@@ -6,7 +6,7 @@ import (
 	"log/slog"
 
 	"github.com/containerd/containerd/v2/pkg/oci"
-	"github.com/ephpm/ephemerd/pkg/jobcgroup"
+	"github.com/ephemerd/ephemerd/pkg/jobcgroup"
 )
 
 // pidsLimitOpts is a no-op off Linux: pids.max is a Linux cgroup control, and

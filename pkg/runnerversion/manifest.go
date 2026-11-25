@@ -20,7 +20,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ephpm/ephemerd/pkg/runner"
+	"github.com/ephemerd/ephemerd/pkg/runner"
 )
 
 // SchemaVersion is the only manifest schema this build understands. An

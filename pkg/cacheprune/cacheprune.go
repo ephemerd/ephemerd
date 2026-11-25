@@ -27,9 +27,9 @@ import (
 	"strings"
 
 	containerdclient "github.com/containerd/containerd/v2/client"
-	"github.com/ephpm/ephemerd/pkg/buildkit"
-	"github.com/ephpm/ephemerd/pkg/dind"
-	"github.com/ephpm/ephemerd/pkg/imagegc"
+	"github.com/ephemerd/ephemerd/pkg/buildkit"
+	"github.com/ephemerd/ephemerd/pkg/dind"
+	"github.com/ephemerd/ephemerd/pkg/imagegc"
 	bkclient "github.com/moby/buildkit/client"
 )
 

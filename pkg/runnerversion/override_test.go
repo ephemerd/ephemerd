@@ -4,8 +4,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ephpm/ephemerd/pkg/metrics"
-	"github.com/ephpm/ephemerd/pkg/runner"
+	"github.com/ephemerd/ephemerd/pkg/metrics"
+	"github.com/ephemerd/ephemerd/pkg/runner"
 	"github.com/prometheus/client_golang/prometheus/testutil"
 )
 
@@ -77,11 +77,11 @@ func TestImageOverrideEngageClear(t *testing.T) {
 		t.Fatal("nil override must be inactive")
 	}
 	o = NewImageOverride(testLog())
-	if _, ok := o.OfficialRunnerOverride("ephpm/ephemerd:runner-ci-linux"); ok {
+	if _, ok := o.OfficialRunnerOverride("ephemerd/ephemerd:runner-ci-linux"); ok {
 		t.Fatal("fresh override must be inactive")
 	}
-	o.Engage("/data/runners/verified/extracted/2.338.2-linux", "2.338.2", "ephpm/ephemerd:runner-ci-linux", "test")
-	dir, ok := o.OfficialRunnerOverride("ephpm/ephemerd:runner-ci-linux")
+	o.Engage("/data/runners/verified/extracted/2.338.2-linux", "2.338.2", "ephemerd/ephemerd:runner-ci-linux", "test")
+	dir, ok := o.OfficialRunnerOverride("ephemerd/ephemerd:runner-ci-linux")
 	if !ok || dir != "/data/runners/verified/extracted/2.338.2-linux" {
 		t.Fatalf("engaged: %q %v", dir, ok)
 	}

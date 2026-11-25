@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ephpm/ephemerd/pkg/providers"
+	"github.com/ephemerd/ephemerd/pkg/providers"
 )
 
 // resolveImageWithLog runs resolveImage against a mock provider whose
@@ -63,7 +63,7 @@ func TestResolveImage_QuietWhenWindowsImageIsNotFromContainerDirective(t *testin
 		Log:       slog.New(slog.NewTextHandler(&buf, &slog.HandlerOptions{Level: slog.LevelWarn})),
 		RunnerImageForRepo: func(repo, os string) string {
 			if repo == "acme/widgets" && os == "windows" {
-				return "ghcr.io/ephpm/ephemerd:runner-ci-windows"
+				return "ghcr.io/ephemerd/ephemerd:runner-ci-windows"
 			}
 			return ""
 		},
@@ -71,7 +71,7 @@ func TestResolveImage_QuietWhenWindowsImageIsNotFromContainerDirective(t *testin
 	event := providers.JobEvent{Provider: p, JobID: 7, Repo: "acme/widgets"}
 
 	img := s.resolveImage(context.Background(), &event, "windows")
-	if img != "ghcr.io/ephpm/ephemerd:runner-ci-windows" {
+	if img != "ghcr.io/ephemerd/ephemerd:runner-ci-windows" {
 		t.Fatalf("resolveImage() = %q, want the per-repo override", img)
 	}
 	if buf.Len() != 0 {

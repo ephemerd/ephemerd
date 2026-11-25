@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ephpm/ephemerd/pkg/vm"
+	"github.com/ephemerd/ephemerd/pkg/vm"
 )
 
 // TestSweepMacClones_IdleWithoutMacOS: a node with no macOS support (every

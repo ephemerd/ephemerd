@@ -9,7 +9,7 @@ import (
 	"os/exec"
 	"strings"
 
-	"github.com/ephpm/ephemerd/pkg/config"
+	"github.com/ephemerd/ephemerd/pkg/config"
 )
 
 // kataShimBinary is the shim containerd execs when a container names the

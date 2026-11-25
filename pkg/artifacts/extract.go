@@ -21,7 +21,7 @@ import (
 	"github.com/containerd/containerd/v2/pkg/archive/compression"
 	"github.com/containerd/containerd/v2/pkg/namespaces"
 	"github.com/containerd/platforms"
-	"github.com/ephpm/ephemerd/pkg/registrymirror"
+	"github.com/ephemerd/ephemerd/pkg/registrymirror"
 	ocispec "github.com/opencontainers/image-spec/specs-go/v1"
 )
 

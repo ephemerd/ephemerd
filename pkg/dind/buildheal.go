@@ -5,8 +5,8 @@ import (
 	"log/slog"
 
 	"github.com/containerd/containerd/v2/client"
-	"github.com/ephpm/ephemerd/pkg/buildkit"
-	"github.com/ephpm/ephemerd/pkg/imagegc"
+	"github.com/ephemerd/ephemerd/pkg/buildkit"
+	"github.com/ephemerd/ephemerd/pkg/imagegc"
 )
 
 // Auto-repair of the shared build store, ask (2) of #149.

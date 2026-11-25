@@ -40,7 +40,7 @@ func TestBuildRecordJobID(t *testing.T) {
 	}{
 		{
 			name:    "job-scoped build export",
-			record:  "build.ephemerd.local/ephemerd-github-ephpm-agile_planck/ephpm/ephemerd:runner-ci-linux-amd64",
+			record:  "build.ephemerd.local/ephemerd-github-ephpm-agile_planck/ephemerd/ephemerd:runner-ci-linux-amd64",
 			wantJob: "ephemerd-github-ephpm-agile_planck",
 			wantOK:  true,
 		},

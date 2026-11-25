@@ -15,7 +15,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ephpm/ephemerd/pkg/providers"
+	"github.com/ephemerd/ephemerd/pkg/providers"
 )
 
 // linuxQueuedEvent builds a queued Linux job event for the given provider.

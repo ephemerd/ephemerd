@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ephpm/ephemerd/pkg/config"
+	"github.com/ephemerd/ephemerd/pkg/config"
 )
 
 // TestEnforceFirewallInstall_LinuxFailClosed verifies the containment guarantee:

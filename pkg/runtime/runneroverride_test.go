@@ -18,7 +18,7 @@ func (f *fakeOverride) OfficialRunnerOverride(image string) (string, bool) {
 
 func TestPlanRunnerMount(t *testing.T) {
 	const cfgDir, cfgMount = "/data/runners/2.337.0-linux", "/actions-runner"
-	const official = "ephpm/ephemerd:runner-ci-linux-amd64"
+	const official = "ephemerd/ephemerd:runner-ci-linux-amd64"
 	engaged := &fakeOverride{dir: "/data/runners/verified/extracted/2.338.2-linux", ok: true}
 	idle := &fakeOverride{}
 

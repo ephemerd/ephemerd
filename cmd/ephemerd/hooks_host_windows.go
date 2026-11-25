@@ -5,8 +5,8 @@ package main
 import (
 	"log/slog"
 
-	"github.com/ephpm/ephemerd/pkg/metrics"
-	"github.com/ephpm/ephemerd/pkg/runtime"
+	"github.com/ephemerd/ephemerd/pkg/metrics"
+	"github.com/ephemerd/ephemerd/pkg/runtime"
 )
 
 // buildHostSamplerHooks returns the OnTaskStarted / OnTaskDestroy callbacks

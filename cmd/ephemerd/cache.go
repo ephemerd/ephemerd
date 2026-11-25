@@ -9,8 +9,8 @@ import (
 	"sort"
 	"strings"
 
-	apiv1 "github.com/ephpm/ephemerd/api/v1"
-	"github.com/ephpm/ephemerd/pkg/cacheprune"
+	apiv1 "github.com/ephemerd/ephemerd/api/v1"
+	"github.com/ephemerd/ephemerd/pkg/cacheprune"
 	"github.com/urfave/cli/v3"
 )
 

@@ -13,8 +13,8 @@ import (
 	gh "github.com/google/go-github/v72/github"
 	"github.com/prometheus/client_golang/prometheus/testutil"
 
-	"github.com/ephpm/ephemerd/pkg/metrics"
-	"github.com/ephpm/ephemerd/pkg/runner"
+	"github.com/ephemerd/ephemerd/pkg/metrics"
+	"github.com/ephemerd/ephemerd/pkg/runner"
 )
 
 // ghDownloadsAt is ghDownloads with download URLs under base (a test

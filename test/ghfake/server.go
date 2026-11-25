@@ -36,7 +36,7 @@ import (
 
 	gh "github.com/google/go-github/v72/github"
 
-	"github.com/ephpm/ephemerd/pkg/github"
+	"github.com/ephemerd/ephemerd/pkg/github"
 )
 
 // job represents a queued workflow job.

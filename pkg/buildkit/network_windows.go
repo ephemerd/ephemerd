@@ -11,7 +11,7 @@ import (
 	"strings"
 	"sync/atomic"
 
-	"github.com/ephpm/ephemerd/pkg/networking"
+	"github.com/ephemerd/ephemerd/pkg/networking"
 	resourcestypes "github.com/moby/buildkit/executor/resources/types"
 	"github.com/moby/buildkit/util/network"
 	specs "github.com/opencontainers/runtime-spec/specs-go"

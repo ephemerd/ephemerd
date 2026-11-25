@@ -8,7 +8,7 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/ephpm/ephemerd/pkg/forgerunner"
+	"github.com/ephemerd/ephemerd/pkg/forgerunner"
 	"github.com/urfave/cli/v3"
 )
 

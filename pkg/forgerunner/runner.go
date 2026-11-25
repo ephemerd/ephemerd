@@ -14,7 +14,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/ephpm/ephemerd/pkg/forgerpc"
+	"github.com/ephemerd/ephemerd/pkg/forgerpc"
 )
 
 // Config configures a forge runner instance.

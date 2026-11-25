@@ -1146,7 +1146,7 @@ type UpgradeRequest struct {
 	// release take down every node at once. Must be an explicit release tag.
 	TargetVersion string `protobuf:"bytes,1,opt,name=target_version,json=targetVersion,proto3" json:"target_version,omitempty"`
 	// url_override optionally replaces the release base URL
-	// (https://github.com/ephpm/ephemerd/releases/download/<tag>). When set,
+	// (https://github.com/ephemerd/ephemerd/releases/download/<tag>). When set,
 	// the archive is fetched from <url_override>/<asset> and the checksums from
 	// <url_override>/checksums.txt. For testing and air-gapped mirrors.
 	UrlOverride string `protobuf:"bytes,2,opt,name=url_override,json=urlOverride,proto3" json:"url_override,omitempty"`

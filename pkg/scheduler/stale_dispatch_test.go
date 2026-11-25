@@ -24,7 +24,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ephpm/ephemerd/pkg/providers"
+	"github.com/ephemerd/ephemerd/pkg/providers"
 )
 
 // jobStateProvider answers JobAwaitingRunner from a test-controlled value.

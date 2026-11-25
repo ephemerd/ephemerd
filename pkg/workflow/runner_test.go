@@ -10,10 +10,10 @@ func TestParseRepoFromURL(t *testing.T) {
 		url  string
 		want string
 	}{
-		{"HTTPS with .git", "https://github.com/ephpm/ephemerd.git", "ephpm/ephemerd"},
-		{"HTTPS without .git", "https://github.com/ephpm/ephemerd", "ephpm/ephemerd"},
-		{"SSH format", "git@github.com:ephpm/ephemerd.git", "ephpm/ephemerd"},
-		{"SSH without .git", "git@github.com:ephpm/ephemerd", "ephpm/ephemerd"},
+		{"HTTPS with .git", "https://github.com/ephemerd/ephemerd.git", "ephemerd/ephemerd"},
+		{"HTTPS without .git", "https://github.com/ephemerd/ephemerd", "ephemerd/ephemerd"},
+		{"SSH format", "git@github.com:ephemerd/ephemerd.git", "ephemerd/ephemerd"},
+		{"SSH without .git", "git@github.com:ephemerd/ephemerd", "ephemerd/ephemerd"},
 		{"SSH nested org", "git@github.com:my-org/my-repo.git", "my-org/my-repo"},
 		{"HTTPS GitLab", "https://gitlab.com/group/project.git", "group/project"},
 		{"HTTPS with trailing slash", "https://github.com/owner/repo/", "repo/"},

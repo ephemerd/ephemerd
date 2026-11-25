@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ephpm/ephemerd/pkg/providers"
+	"github.com/ephemerd/ephemerd/pkg/providers"
 )
 
 // mockProvider is a fake providers.Poll implementation for testing

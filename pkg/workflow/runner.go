@@ -14,10 +14,10 @@ import (
 	"github.com/containerd/containerd/v2/pkg/cio"
 	"github.com/containerd/containerd/v2/pkg/namespaces"
 	"github.com/containerd/containerd/v2/pkg/oci"
-	"github.com/ephpm/ephemerd/pkg/cni"
-	ctdpkg "github.com/ephpm/ephemerd/pkg/containerd"
-	"github.com/ephpm/ephemerd/pkg/networking"
-	"github.com/ephpm/ephemerd/pkg/registrymirror"
+	"github.com/ephemerd/ephemerd/pkg/cni"
+	ctdpkg "github.com/ephemerd/ephemerd/pkg/containerd"
+	"github.com/ephemerd/ephemerd/pkg/networking"
+	"github.com/ephemerd/ephemerd/pkg/registrymirror"
 	ocispec "github.com/opencontainers/runtime-spec/specs-go"
 )
 

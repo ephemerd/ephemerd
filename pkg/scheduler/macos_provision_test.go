@@ -8,8 +8,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ephpm/ephemerd/pkg/providers"
-	"github.com/ephpm/ephemerd/pkg/vm"
+	"github.com/ephemerd/ephemerd/pkg/providers"
+	"github.com/ephemerd/ephemerd/pkg/vm"
 )
 
 // blockingMacVM is a vm.MacOSVM whose WaitForRunner never returns on its own —

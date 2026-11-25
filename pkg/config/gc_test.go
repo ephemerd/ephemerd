@@ -164,12 +164,12 @@ func TestPinnedRunnerImages(t *testing.T) {
 		Runner: RunnerConfig{
 			DefaultImage: "ghcr.io/actions/actions-runner:latest",
 			Images: map[string]map[string]string{
-				"ephemerd": {"linux": "ephpm/ephemerd:runner-ci-linux-amd64", "windows": "ephpm/ephemerd:runner-ci-windows"},
+				"ephemerd": {"linux": "ephemerd/ephemerd:runner-ci-linux-amd64", "windows": "ephemerd/ephemerd:runner-ci-windows"},
 			},
 		},
 		GitHub: GitHubConfig{
 			Owner:               "ephpm",
-			DefaultImageLinux:   "ephpm/ephemerd:runner-ci-linux-amd64", // duplicate of the per-repo entry
+			DefaultImageLinux:   "ephemerd/ephemerd:runner-ci-linux-amd64", // duplicate of the per-repo entry
 			DefaultImageWindows: "mcr.microsoft.com/windows/servercore:ltsc2022",
 		},
 		Gitea: GiteaConfig{InstanceURL: "https://gitea.example.com", JobImage: "gitea/runner-images:ubuntu-24.04"},
@@ -177,8 +177,8 @@ func TestPinnedRunnerImages(t *testing.T) {
 
 	got := cfg.PinnedRunnerImages()
 	want := []string{
-		"ephpm/ephemerd:runner-ci-linux-amd64",
-		"ephpm/ephemerd:runner-ci-windows",
+		"ephemerd/ephemerd:runner-ci-linux-amd64",
+		"ephemerd/ephemerd:runner-ci-windows",
 		"gitea/runner-images:ubuntu-24.04",
 		"ghcr.io/actions/actions-runner:latest",
 		"mcr.microsoft.com/windows/servercore:ltsc2022",

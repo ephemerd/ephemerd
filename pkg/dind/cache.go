@@ -13,7 +13,7 @@ import (
 	"github.com/containerd/containerd/v2/core/leases"
 	"github.com/containerd/containerd/v2/pkg/namespaces"
 	"github.com/containerd/errdefs"
-	"github.com/ephpm/ephemerd/pkg/imagegc"
+	"github.com/ephemerd/ephemerd/pkg/imagegc"
 	"github.com/opencontainers/go-digest"
 	ocispec "github.com/opencontainers/image-spec/specs-go/v1"
 )

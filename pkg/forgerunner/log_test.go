@@ -10,7 +10,7 @@ import (
 	"sync/atomic"
 	"testing"
 
-	"github.com/ephpm/ephemerd/pkg/forgerpc"
+	"github.com/ephemerd/ephemerd/pkg/forgerpc"
 )
 
 // fakeUpdateLogServer mocks the runner.v1.RunnerService UpdateLog endpoint

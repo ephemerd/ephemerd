@@ -8,7 +8,7 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/ephpm/ephemerd/mage/download"
+	"github.com/ephemerd/ephemerd/mage/download"
 	"github.com/magefile/mage/mg"
 	"github.com/magefile/mage/sh"
 )
@@ -293,7 +293,7 @@ func runnerLdflags() string {
 
 func ldflags() string {
 	version := gitVersion()
-	return fmt.Sprintf("-s -w -X main.version=%s -X github.com/ephpm/ephemerd/pkg/runner.Version=%s -X github.com/ephpm/ephemerd/pkg/cni.Version=%s",
+	return fmt.Sprintf("-s -w -X main.version=%s -X github.com/ephemerd/ephemerd/pkg/runner.Version=%s -X github.com/ephemerd/ephemerd/pkg/cni.Version=%s",
 		version, download.RunnerVersion, download.CNIVersion)
 }
 

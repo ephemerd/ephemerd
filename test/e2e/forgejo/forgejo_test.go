@@ -28,9 +28,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ephpm/ephemerd/pkg/forgerpc"
-	forgejoprovider "github.com/ephpm/ephemerd/pkg/providers/forgejo"
-	"github.com/ephpm/ephemerd/pkg/providers"
+	"github.com/ephemerd/ephemerd/pkg/forgerpc"
+	forgejoprovider "github.com/ephemerd/ephemerd/pkg/providers/forgejo"
+	"github.com/ephemerd/ephemerd/pkg/providers"
 )
 
 const (

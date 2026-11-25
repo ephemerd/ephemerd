@@ -42,8 +42,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ephpm/ephemerd/pkg/proxies"
-	"github.com/ephpm/ephemerd/pkg/proxies/pkgcache"
+	"github.com/ephemerd/ephemerd/pkg/proxies"
+	"github.com/ephemerd/ephemerd/pkg/proxies/pkgcache"
 )
 
 // Defaults. Kept here rather than in the config package so the proxy is

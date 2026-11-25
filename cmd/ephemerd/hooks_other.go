@@ -5,8 +5,8 @@ package main
 import (
 	"log/slog"
 
-	"github.com/ephpm/ephemerd/pkg/runtime"
-	"github.com/ephpm/ephemerd/pkg/scheduler"
+	"github.com/ephemerd/ephemerd/pkg/runtime"
+	"github.com/ephemerd/ephemerd/pkg/scheduler"
 )
 
 // buildDispatchSamplerHooks is the cross-compile stub. Worker mode (and

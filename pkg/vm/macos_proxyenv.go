@@ -4,7 +4,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/ephpm/ephemerd/pkg/proxies"
+	"github.com/ephemerd/ephemerd/pkg/proxies"
 )
 
 // Cache-proxy env for macOS VM jobs.

@@ -6,8 +6,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ephpm/ephemerd/pkg/metrics"
-	"github.com/ephpm/ephemerd/pkg/runner"
+	"github.com/ephemerd/ephemerd/pkg/metrics"
+	"github.com/ephemerd/ephemerd/pkg/runner"
 )
 
 func withEmbeddedVersion(t *testing.T, v string) {

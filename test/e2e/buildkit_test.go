@@ -33,9 +33,9 @@ import (
 
 	"github.com/containerd/containerd/v2/client"
 	"github.com/containerd/containerd/v2/pkg/namespaces"
-	"github.com/ephpm/ephemerd/pkg/buildkit"
-	containerdpkg "github.com/ephpm/ephemerd/pkg/containerd"
-	"github.com/ephpm/ephemerd/pkg/networking"
+	"github.com/ephemerd/ephemerd/pkg/buildkit"
+	containerdpkg "github.com/ephemerd/ephemerd/pkg/containerd"
+	"github.com/ephemerd/ephemerd/pkg/networking"
 	bkclient "github.com/moby/buildkit/client"
 	fsutil "github.com/tonistiigi/fsutil"
 )

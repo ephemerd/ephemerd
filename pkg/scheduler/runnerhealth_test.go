@@ -5,7 +5,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/ephpm/ephemerd/pkg/providers"
+	"github.com/ephemerd/ephemerd/pkg/providers"
 )
 
 // fakeRunnerHealth records every detector call and answers Allow from a

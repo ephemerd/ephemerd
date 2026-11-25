@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ephpm/ephemerd/pkg/metrics"
+	"github.com/ephemerd/ephemerd/pkg/metrics"
 	"github.com/prometheus/client_golang/prometheus/testutil"
 )
 

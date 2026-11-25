@@ -16,9 +16,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ephpm/ephemerd/pkg/cni"
-	"github.com/ephpm/ephemerd/pkg/dind"
-	"github.com/ephpm/ephemerd/pkg/networking"
+	"github.com/ephemerd/ephemerd/pkg/cni"
+	"github.com/ephemerd/ephemerd/pkg/dind"
+	"github.com/ephemerd/ephemerd/pkg/networking"
 )
 
 // TestE2E_KindInDind_NetnsWiring reproduces the failure mode from CI where a

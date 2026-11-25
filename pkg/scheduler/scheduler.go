@@ -17,14 +17,14 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ephpm/ephemerd/pkg/artifacts"
-	"github.com/ephpm/ephemerd/pkg/cacheprune"
-	"github.com/ephpm/ephemerd/pkg/metrics"
-	"github.com/ephpm/ephemerd/pkg/names"
-	"github.com/ephpm/ephemerd/pkg/providers"
-	"github.com/ephpm/ephemerd/pkg/runtime"
-	"github.com/ephpm/ephemerd/pkg/tunnel"
-	"github.com/ephpm/ephemerd/pkg/vm"
+	"github.com/ephemerd/ephemerd/pkg/artifacts"
+	"github.com/ephemerd/ephemerd/pkg/cacheprune"
+	"github.com/ephemerd/ephemerd/pkg/metrics"
+	"github.com/ephemerd/ephemerd/pkg/names"
+	"github.com/ephemerd/ephemerd/pkg/providers"
+	"github.com/ephemerd/ephemerd/pkg/runtime"
+	"github.com/ephemerd/ephemerd/pkg/tunnel"
+	"github.com/ephemerd/ephemerd/pkg/vm"
 	gh "github.com/google/go-github/v72/github"
 )
 

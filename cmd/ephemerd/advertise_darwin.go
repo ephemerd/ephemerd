@@ -7,7 +7,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/ephpm/ephemerd/pkg/proxies"
+	"github.com/ephemerd/ephemerd/pkg/proxies"
 )
 
 // vzNAT is the subnet Apple's Virtualization.framework NATs guests onto. The VM

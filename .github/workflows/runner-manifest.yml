@@ -13,8 +13,8 @@ name: Runner manifest
 # It is published as two assets on a rolling prerelease whose tag never
 # changes, so the URL nodes carry by default is stable:
 #
-#   https://github.com/ephpm/ephemerd/releases/download/runner-manifest/runner-manifest.json
-#   https://github.com/ephpm/ephemerd/releases/download/runner-manifest/runner-manifest.json.minisig
+#   https://github.com/ephemerd/ephemerd/releases/download/runner-manifest/runner-manifest.json
+#   https://github.com/ephemerd/ephemerd/releases/download/runner-manifest/runner-manifest.json.minisig
 #
 # (the canary channel publishes under runner-manifest-canary). The release
 # is marked prerelease and never "latest" so it cannot steal the

@@ -9,7 +9,7 @@
 ## Dev setup
 
 ```bash
-git clone https://github.com/ephpm/ephemerd.git
+git clone https://github.com/ephemerd/ephemerd.git
 cd ephemerd
 
 # Download all embedded dependencies (runner binary, CNI plugins, containerd shim, Alpine rootfs)

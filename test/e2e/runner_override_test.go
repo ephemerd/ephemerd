@@ -11,11 +11,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ephpm/ephemerd/pkg/cni"
-	"github.com/ephpm/ephemerd/pkg/networking"
-	"github.com/ephpm/ephemerd/pkg/runner"
-	"github.com/ephpm/ephemerd/pkg/runnerversion"
-	"github.com/ephpm/ephemerd/pkg/runtime"
+	"github.com/ephemerd/ephemerd/pkg/cni"
+	"github.com/ephemerd/ephemerd/pkg/networking"
+	"github.com/ephemerd/ephemerd/pkg/runner"
+	"github.com/ephemerd/ephemerd/pkg/runnerversion"
+	"github.com/ephemerd/ephemerd/pkg/runtime"
 )
 
 // staleOfficialImage is an official runner image whose baked-in runner is

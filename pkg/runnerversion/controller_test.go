@@ -13,8 +13,8 @@ import (
 
 	gh "github.com/google/go-github/v72/github"
 
-	"github.com/ephpm/ephemerd/pkg/metrics"
-	"github.com/ephpm/ephemerd/pkg/runner"
+	"github.com/ephemerd/ephemerd/pkg/metrics"
+	"github.com/ephemerd/ephemerd/pkg/runner"
 )
 
 // switchLoader lets a test change what "the network" returns between

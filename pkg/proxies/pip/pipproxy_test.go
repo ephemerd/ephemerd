@@ -15,7 +15,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ephpm/ephemerd/pkg/proxies/pkgcache"
+	"github.com/ephemerd/ephemerd/pkg/proxies/pkgcache"
 )
 
 // --- harness ---------------------------------------------------------------

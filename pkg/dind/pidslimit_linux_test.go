@@ -10,7 +10,7 @@ import (
 
 	"github.com/containerd/containerd/v2/core/containers"
 	"github.com/containerd/containerd/v2/pkg/oci"
-	"github.com/ephpm/ephemerd/pkg/jobcgroup"
+	"github.com/ephemerd/ephemerd/pkg/jobcgroup"
 	ocispec "github.com/opencontainers/runtime-spec/specs-go"
 )
 

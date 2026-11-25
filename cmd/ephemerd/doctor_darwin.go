@@ -13,7 +13,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/ephpm/ephemerd/pkg/vm"
+	"github.com/ephemerd/ephemerd/pkg/vm"
 )
 
 func platformChecks(pass, warn, fail func(string)) {

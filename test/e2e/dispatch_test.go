@@ -10,10 +10,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ephpm/ephemerd/pkg/cni"
-	"github.com/ephpm/ephemerd/pkg/networking"
-	"github.com/ephpm/ephemerd/pkg/runtime"
-	"github.com/ephpm/ephemerd/pkg/scheduler"
+	"github.com/ephemerd/ephemerd/pkg/cni"
+	"github.com/ephemerd/ephemerd/pkg/networking"
+	"github.com/ephemerd/ephemerd/pkg/runtime"
+	"github.com/ephemerd/ephemerd/pkg/scheduler"
 )
 
 // TestE2E_Dispatch_RoundTrip starts a dispatch gRPC server backed by a real

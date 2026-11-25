@@ -39,9 +39,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ephpm/ephemerd/pkg/forgerpc"
-	"github.com/ephpm/ephemerd/pkg/names"
-	"github.com/ephpm/ephemerd/pkg/providers"
+	"github.com/ephemerd/ephemerd/pkg/forgerpc"
+	"github.com/ephemerd/ephemerd/pkg/names"
+	"github.com/ephemerd/ephemerd/pkg/providers"
 )
 
 const (

@@ -7,8 +7,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ephpm/ephemerd/mage/download"
-	"github.com/ephpm/ephemerd/pkg/runnerversion"
+	"github.com/ephemerd/ephemerd/mage/download"
+	"github.com/ephemerd/ephemerd/pkg/runnerversion"
 )
 
 // The manifest is the pinned table, nothing more: every platform in

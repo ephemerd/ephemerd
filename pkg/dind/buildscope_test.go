@@ -30,8 +30,8 @@ func TestScopedBuildRef(t *testing.T) {
 		{
 			name:  "registry-qualified ref folds into path",
 			jobID: "job1",
-			ref:   "ghcr.io/ephpm/ephemerd:v1",
-			want:  "build.ephemerd.local/job1/ghcr.io/ephpm/ephemerd:v1",
+			ref:   "ghcr.io/ephemerd/ephemerd:v1",
+			want:  "build.ephemerd.local/job1/ghcr.io/ephemerd/ephemerd:v1",
 		},
 		{
 			name:  "uppercase jobID is lowercased",
@@ -88,7 +88,7 @@ func TestScopedBuildRef_ProducesValidReferences(t *testing.T) {
 		"ephpm:dev",
 		"ephpm-e2e:dev",
 		"ephpm/sub:v1.2.3",
-		"ghcr.io/ephpm/ephemerd:runner-ci-linux-amd64",
+		"ghcr.io/ephemerd/ephemerd:runner-ci-linux-amd64",
 		"img:UPPER-Tag_ok.1",
 	}
 	for _, j := range jobIDs {

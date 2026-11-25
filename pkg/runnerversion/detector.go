@@ -5,7 +5,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ephpm/ephemerd/pkg/metrics"
+	"github.com/ephemerd/ephemerd/pkg/metrics"
 )
 
 // Detector is mechanism 2: it recognises a runner that registered and

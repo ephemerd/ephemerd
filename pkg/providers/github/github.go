@@ -11,8 +11,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/ephpm/ephemerd/pkg/github"
-	"github.com/ephpm/ephemerd/pkg/providers"
+	"github.com/ephemerd/ephemerd/pkg/github"
+	"github.com/ephemerd/ephemerd/pkg/providers"
 )
 
 const defaultImage = "ghcr.io/actions/actions-runner:latest"

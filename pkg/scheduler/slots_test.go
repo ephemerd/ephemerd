@@ -17,9 +17,9 @@ import (
 	"testing"
 	"time"
 
-	apiv1 "github.com/ephpm/ephemerd/api/v1"
-	"github.com/ephpm/ephemerd/pkg/providers"
-	"github.com/ephpm/ephemerd/pkg/vm"
+	apiv1 "github.com/ephemerd/ephemerd/api/v1"
+	"github.com/ephemerd/ephemerd/pkg/providers"
+	"github.com/ephemerd/ephemerd/pkg/vm"
 )
 
 // wedgedMacVM is the macOS VM from issue #196 and the reason

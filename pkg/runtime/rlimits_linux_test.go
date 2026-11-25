@@ -9,8 +9,8 @@ import (
 	"testing"
 
 	"github.com/containerd/containerd/v2/pkg/oci"
-	"github.com/ephpm/ephemerd/pkg/config"
-	"github.com/ephpm/ephemerd/pkg/jobcgroup"
+	"github.com/ephemerd/ephemerd/pkg/config"
+	"github.com/ephemerd/ephemerd/pkg/jobcgroup"
 	ocispec "github.com/opencontainers/runtime-spec/specs-go"
 )
 

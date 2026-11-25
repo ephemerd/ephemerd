@@ -4,14 +4,14 @@ import (
 	"fmt"
 	"log/slog"
 
-	"github.com/ephpm/ephemerd/pkg/config"
-	"github.com/ephpm/ephemerd/pkg/networking"
-	"github.com/ephpm/ephemerd/pkg/proxies"
-	composerproxy "github.com/ephpm/ephemerd/pkg/proxies/composer"
-	ghrelproxy "github.com/ephpm/ephemerd/pkg/proxies/ghrel"
-	npmproxy "github.com/ephpm/ephemerd/pkg/proxies/npm"
-	pipproxy "github.com/ephpm/ephemerd/pkg/proxies/pip"
-	pubproxy "github.com/ephpm/ephemerd/pkg/proxies/pub"
+	"github.com/ephemerd/ephemerd/pkg/config"
+	"github.com/ephemerd/ephemerd/pkg/networking"
+	"github.com/ephemerd/ephemerd/pkg/proxies"
+	composerproxy "github.com/ephemerd/ephemerd/pkg/proxies/composer"
+	ghrelproxy "github.com/ephemerd/ephemerd/pkg/proxies/ghrel"
+	npmproxy "github.com/ephemerd/ephemerd/pkg/proxies/npm"
+	pipproxy "github.com/ephemerd/ephemerd/pkg/proxies/pip"
+	pubproxy "github.com/ephemerd/ephemerd/pkg/proxies/pub"
 )
 
 // Default listen ports for the language package caches, on the bridge

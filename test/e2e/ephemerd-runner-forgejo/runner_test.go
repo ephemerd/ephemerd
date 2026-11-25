@@ -26,7 +26,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ephpm/ephemerd/pkg/forgerpc"
+	"github.com/ephemerd/ephemerd/pkg/forgerpc"
 )
 
 const (

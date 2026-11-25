@@ -51,7 +51,7 @@ func TestPushResolverBearerFlow(t *testing.T) {
 			return
 		}
 		w.Header().Set("WWW-Authenticate",
-			fmt.Sprintf(`Bearer realm="%s/auth/token",service="registry.docker.io",scope="repository:ephpm/ephemerd:pull"`,
+			fmt.Sprintf(`Bearer realm="%s/auth/token",service="registry.docker.io",scope="repository:ephemerd/ephemerd:pull"`,
 				originBase(r)))
 		w.WriteHeader(http.StatusUnauthorized)
 	})
@@ -95,7 +95,7 @@ func TestPushResolverBearerFlow(t *testing.T) {
 	})
 
 	host := strings.TrimPrefix(srv.URL, "http://")
-	ref := host + "/ephpm/ephemerd:test"
+	ref := host + "/ephemerd/ephemerd:test"
 
 	ctx, cancel := context.WithCancel(context.Background())
 	defer cancel()
@@ -167,7 +167,7 @@ func TestAuthCacheRoundtrip(t *testing.T) {
 	}
 
 	// 2a. Cache lookup keyed off the registry host that registryHostFromRef
-	//     derives from "ephpm/ephemerd:tag" (i.e. "docker.io").
+	//     derives from "ephemerd/ephemerd:tag" (i.e. "docker.io").
 	cfg, ok := s.auth.get("docker.io")
 	if !ok {
 		t.Fatal("/auth body did not populate cache under normalized key 'docker.io'")
@@ -179,7 +179,7 @@ func TestAuthCacheRoundtrip(t *testing.T) {
 
 	// 2b. resolveAuthForRef with no header → cache hit by ref-derived host.
 	pushReq, _ := http.NewRequest(http.MethodPost, "http://docker/x", nil)
-	got, ok := s.resolveAuthForRef(pushReq, "ephpm/ephemerd:runner-ci-windows")
+	got, ok := s.resolveAuthForRef(pushReq, "ephemerd/ephemerd:runner-ci-windows")
 	if !ok {
 		t.Fatal("resolveAuthForRef cache miss for unqualified ref")
 	}
@@ -193,7 +193,7 @@ func TestAuthCacheRoundtrip(t *testing.T) {
 	hdrJSON, _ := json.Marshal(hdrCfg)
 	pushReq2, _ := http.NewRequest(http.MethodPost, "http://docker/x", nil)
 	pushReq2.Header.Set("X-Registry-Auth", base64.StdEncoding.EncodeToString(hdrJSON))
-	got2, ok := s.resolveAuthForRef(pushReq2, "ephpm/ephemerd:runner-ci-windows")
+	got2, ok := s.resolveAuthForRef(pushReq2, "ephemerd/ephemerd:runner-ci-windows")
 	if !ok {
 		t.Fatal("resolveAuthForRef returned ok=false even with valid header")
 	}

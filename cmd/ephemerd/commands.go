@@ -14,9 +14,9 @@ import (
 	"syscall"
 	"time"
 
-	apiv1 "github.com/ephpm/ephemerd/api/v1"
-	"github.com/ephpm/ephemerd/pkg/config"
-	"github.com/ephpm/ephemerd/pkg/scheduler"
+	apiv1 "github.com/ephemerd/ephemerd/api/v1"
+	"github.com/ephemerd/ephemerd/pkg/config"
+	"github.com/ephemerd/ephemerd/pkg/scheduler"
 
 	"github.com/urfave/cli/v3"
 	"google.golang.org/grpc"

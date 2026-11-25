@@ -8,8 +8,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ephpm/ephemerd/pkg/metrics"
-	"github.com/ephpm/ephemerd/pkg/runner"
+	"github.com/ephemerd/ephemerd/pkg/metrics"
+	"github.com/ephemerd/ephemerd/pkg/runner"
 )
 
 // Upgrader is the break-glass path: resolve the current runner from TWO

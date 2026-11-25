@@ -19,7 +19,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ephpm/ephemerd/test/ghfake"
+	"github.com/ephemerd/ephemerd/test/ghfake"
 )
 
 // TestGitHub_E2E_PollClaimRemove exercises the full job lifecycle:

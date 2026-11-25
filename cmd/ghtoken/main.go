@@ -9,8 +9,8 @@ import (
 	"log/slog"
 	"os"
 
-	"github.com/ephpm/ephemerd/pkg/config"
-	"github.com/ephpm/ephemerd/pkg/github"
+	"github.com/ephemerd/ephemerd/pkg/config"
+	"github.com/ephemerd/ephemerd/pkg/github"
 )
 
 func main() {

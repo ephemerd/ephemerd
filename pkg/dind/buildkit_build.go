@@ -23,7 +23,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/ephpm/ephemerd/pkg/buildkit"
+	"github.com/ephemerd/ephemerd/pkg/buildkit"
 	bkclient "github.com/moby/buildkit/client"
 )
 

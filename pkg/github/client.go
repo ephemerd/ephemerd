@@ -15,7 +15,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/ephpm/ephemerd/pkg/metrics"
+	"github.com/ephemerd/ephemerd/pkg/metrics"
 	gh "github.com/google/go-github/v72/github"
 	"gopkg.in/yaml.v3"
 )

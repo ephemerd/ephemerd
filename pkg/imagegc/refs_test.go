@@ -24,10 +24,10 @@ func TestPlanBrokenChains(t *testing.T) {
 		// Never unpacked — no snapshot to be missing. Must not be evicted:
 		// a pushed-but-never-run image is a perfectly normal record.
 		{Namespace: "buildkit", Name: "staged/img:v1", SnapshotKey: ""},
-		{Namespace: "ephemerd", Name: "ephpm/ephemerd:runner-ci-linux", SnapshotKey: "sha256:gone"},
+		{Namespace: "ephemerd", Name: "ephemerd/ephemerd:runner-ci-linux", SnapshotKey: "sha256:gone"},
 	}
 	existing := map[string]struct{}{"sha256:live": {}}
-	protected := map[string]struct{}{"ephpm/ephemerd:runner-ci-linux": {}}
+	protected := map[string]struct{}{"ephemerd/ephemerd:runner-ci-linux": {}}
 
 	broken, brokenProtected := PlanBrokenChains(chains, existing, protected)
 
@@ -41,7 +41,7 @@ func TestPlanBrokenChains(t *testing.T) {
 	// The pinned runner image is broken too, but evicting it cannot help —
 	// it forces a multi-gigabyte re-pull and any container already running
 	// on it holds its own rootfs. Report, do not act.
-	if len(brokenProtected) != 1 || brokenProtected[0].Name != "ephpm/ephemerd:runner-ci-linux" {
+	if len(brokenProtected) != 1 || brokenProtected[0].Name != "ephemerd/ephemerd:runner-ci-linux" {
 		t.Errorf("brokenProtected = %+v, want the pinned runner image", brokenProtected)
 	}
 }

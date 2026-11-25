@@ -16,7 +16,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ephpm/ephemerd/pkg/runner"
+	"github.com/ephemerd/ephemerd/pkg/runner"
 )
 
 // Store is the content-addressed cache of verified runner archives.

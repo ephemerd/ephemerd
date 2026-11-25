@@ -5,7 +5,7 @@ import (
 	"log/slog"
 	"testing"
 
-	"github.com/ephpm/ephemerd/pkg/providers"
+	"github.com/ephemerd/ephemerd/pkg/providers"
 )
 
 func TestNew_RequiresInstanceURL(t *testing.T) {

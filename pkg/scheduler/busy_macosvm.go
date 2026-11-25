@@ -9,8 +9,8 @@ import (
 	"net"
 	"time"
 
-	"github.com/ephpm/ephemerd/pkg/runnerbusy"
-	"github.com/ephpm/ephemerd/pkg/vm"
+	"github.com/ephemerd/ephemerd/pkg/runnerbusy"
+	"github.com/ephemerd/ephemerd/pkg/vm"
 	"golang.org/x/crypto/ssh"
 )
 

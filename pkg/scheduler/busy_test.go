@@ -6,8 +6,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ephpm/ephemerd/pkg/providers"
-	"github.com/ephpm/ephemerd/pkg/runnerbusy"
+	"github.com/ephemerd/ephemerd/pkg/providers"
+	"github.com/ephemerd/ephemerd/pkg/runnerbusy"
 )
 
 // Stand-ins for the real ground-truth check. Tests have no containerd,

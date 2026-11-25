@@ -52,7 +52,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/ephpm/ephemerd/pkg/proxies"
+	"github.com/ephemerd/ephemerd/pkg/proxies"
 )
 
 // Config configures the cache server.

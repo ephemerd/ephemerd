@@ -9,7 +9,7 @@ import (
 	"strings"
 	"testing"
 
-	ctdpkg "github.com/ephpm/ephemerd/pkg/containerd"
+	ctdpkg "github.com/ephemerd/ephemerd/pkg/containerd"
 )
 
 // crictl subprocess hook env vars — read by TestMain in e2e_test.go.

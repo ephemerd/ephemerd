@@ -72,7 +72,7 @@ func TestPushHandlerEndToEnd(t *testing.T) {
 	const (
 		loginUser = "ephpm"
 		loginPass = "synthetic-pat-for-test"
-		repoName  = "ephpm/ephemerd"
+		repoName  = "ephemerd/ephemerd"
 		imageTag  = "test-tag"
 	)
 

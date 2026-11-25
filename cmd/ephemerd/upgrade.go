@@ -7,8 +7,8 @@ import (
 	"io"
 	"time"
 
-	apiv1 "github.com/ephpm/ephemerd/api/v1"
-	"github.com/ephpm/ephemerd/pkg/upgrade"
+	apiv1 "github.com/ephemerd/ephemerd/api/v1"
+	"github.com/ephemerd/ephemerd/pkg/upgrade"
 
 	"github.com/urfave/cli/v3"
 )

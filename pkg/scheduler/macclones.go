@@ -5,7 +5,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ephpm/ephemerd/pkg/vm"
+	"github.com/ephemerd/ephemerd/pkg/vm"
 )
 
 // macCloneSweepInterval is how often the stale macOS clone sweep runs after

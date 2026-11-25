@@ -23,8 +23,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ephpm/ephemerd/mage/download"
-	"github.com/ephpm/ephemerd/pkg/runnerversion"
+	"github.com/ephemerd/ephemerd/mage/download"
+	"github.com/ephemerd/ephemerd/pkg/runnerversion"
 )
 
 // Environment knobs. Every one has a default so `mage manifest:build` with
@@ -44,7 +44,7 @@ const (
 	EnvPublishedAt = "RUNNER_MANIFEST_PUBLISHED_AT"
 	// EnvSecretKey is the minisign secret key: the whole .key file or just
 	// its base64 line. This is the GitHub Actions secret
-	// RUNNER_MANIFEST_MINISIGN_KEY on ephpm/ephemerd.
+	// RUNNER_MANIFEST_MINISIGN_KEY on ephemerd/ephemerd.
 	EnvSecretKey = "RUNNER_MANIFEST_MINISIGN_KEY"
 	// EnvSecretKeyFile is a path to the .key file, for local signing.
 	EnvSecretKeyFile = "RUNNER_MANIFEST_MINISIGN_KEY_FILE"

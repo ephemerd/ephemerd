@@ -10,10 +10,10 @@ import (
 	"runtime"
 	"syscall"
 
-	"github.com/ephpm/ephemerd/pkg/config"
-	"github.com/ephpm/ephemerd/pkg/registrymirror"
-	"github.com/ephpm/ephemerd/pkg/vm"
-	"github.com/ephpm/ephemerd/pkg/workflow"
+	"github.com/ephemerd/ephemerd/pkg/config"
+	"github.com/ephemerd/ephemerd/pkg/registrymirror"
+	"github.com/ephemerd/ephemerd/pkg/vm"
+	"github.com/ephemerd/ephemerd/pkg/workflow"
 	"github.com/urfave/cli/v3"
 )
 

@@ -51,7 +51,7 @@
 # identically here. build-images.yml orders this build after the base push
 # (needs: windows) and builds with --pull so it never chains from a stale
 # local tag.
-FROM ephpm/ephemerd:runner-ci-windows
+FROM ephemerd/ephemerd:runner-ci-windows
 
 # The VS bootstrapper is fetched from the evergreen channel URL — the same
 # URL the per-job installs use today, so the image and a cold-cache job

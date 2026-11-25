@@ -531,18 +531,18 @@ func TestImageForRepoOS_PerOSOverride(t *testing.T) {
 		DefaultImage: "default:latest",
 		Images: map[string]map[string]string{
 			"ephemerd": {
-				"linux":   "ephpm/ephemerd:runner-ci-linux-amd64",
-				"windows": "ephpm/ephemerd:runner-ci-windows",
+				"linux":   "ephemerd/ephemerd:runner-ci-linux-amd64",
+				"windows": "ephemerd/ephemerd:runner-ci-windows",
 			},
 			"ephpm": {
 				"linux": "ephpm/ephpm:ci-runner",
 			},
 		},
 	}
-	if img := r.ImageForRepoOS("ephemerd", "linux"); img != "ephpm/ephemerd:runner-ci-linux-amd64" {
+	if img := r.ImageForRepoOS("ephemerd", "linux"); img != "ephemerd/ephemerd:runner-ci-linux-amd64" {
 		t.Errorf("ephemerd/linux = %q", img)
 	}
-	if img := r.ImageForRepoOS("ephemerd", "windows"); img != "ephpm/ephemerd:runner-ci-windows" {
+	if img := r.ImageForRepoOS("ephemerd", "windows"); img != "ephemerd/ephemerd:runner-ci-windows" {
 		t.Errorf("ephemerd/windows = %q", img)
 	}
 	if img := r.ImageForRepoOS("ephpm", "linux"); img != "ephpm/ephpm:ci-runner" {
@@ -589,11 +589,11 @@ func TestImageForRepo_Override(t *testing.T) {
 	r := &RunnerConfig{
 		DefaultImage: "default:latest",
 		Images: map[string]map[string]string{
-			"ephemerd": {"linux": "ephpm/ephemerd:runner-ci-linux"},
+			"ephemerd": {"linux": "ephemerd/ephemerd:runner-ci-linux"},
 			"ephpm":    {"linux": "ephpm/ephpm:ci-runner"},
 		},
 	}
-	if img := r.ImageForRepo("ephemerd"); img != "ephpm/ephemerd:runner-ci-linux" {
+	if img := r.ImageForRepo("ephemerd"); img != "ephemerd/ephemerd:runner-ci-linux" {
 		t.Errorf("ImageForRepo(ephemerd) = %q", img)
 	}
 	if img := r.ImageForRepo("ephpm"); img != "ephpm/ephpm:ci-runner" {

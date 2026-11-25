@@ -9,8 +9,8 @@ import (
 	"testing"
 	"time"
 
-	apiv1 "github.com/ephpm/ephemerd/api/v1"
-	"github.com/ephpm/ephemerd/pkg/providers"
+	apiv1 "github.com/ephemerd/ephemerd/api/v1"
+	"github.com/ephemerd/ephemerd/pkg/providers"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 )

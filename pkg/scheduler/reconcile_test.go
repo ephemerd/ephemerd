@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ephpm/ephemerd/pkg/providers"
+	"github.com/ephemerd/ephemerd/pkg/providers"
 )
 
 // catcherProvider is a mockProvider that also implements CatchUpPoll and counts calls.

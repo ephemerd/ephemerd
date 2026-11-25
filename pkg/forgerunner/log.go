@@ -5,7 +5,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ephpm/ephemerd/pkg/forgerpc"
+	"github.com/ephemerd/ephemerd/pkg/forgerpc"
 )
 
 // LogReporter batches log lines and streams them to the forge via UpdateLog.

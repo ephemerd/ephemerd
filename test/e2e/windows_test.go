@@ -11,9 +11,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ephpm/ephemerd/pkg/networking"
-	"github.com/ephpm/ephemerd/pkg/scheduler"
-	"github.com/ephpm/ephemerd/pkg/vm"
+	"github.com/ephemerd/ephemerd/pkg/networking"
+	"github.com/ephemerd/ephemerd/pkg/scheduler"
+	"github.com/ephemerd/ephemerd/pkg/vm"
 )
 
 // testLogWindows returns a logger for Windows e2e tests.

@@ -280,7 +280,7 @@ poll_interval = "30s"
 # tls_key = "/etc/ephemerd/tls.key"
 
 [runner]
-default_image = "ghcr.io/ephpm/ephemerd-build:latest"
+default_image = "ghcr.io/ephemerd/ephemerd-build:latest"
 max_concurrent = 4
 extra_labels = []
 job_timeout = "2h"

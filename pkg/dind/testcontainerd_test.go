@@ -9,7 +9,7 @@ import (
 	"testing"
 
 	"github.com/containerd/containerd/v2/client"
-	containerdpkg "github.com/ephpm/ephemerd/pkg/containerd"
+	containerdpkg "github.com/ephemerd/ephemerd/pkg/containerd"
 )
 
 // containerd's prometheus metrics live in a process-global registry, so

@@ -40,7 +40,7 @@ import (
 const (
 	// defaultRepoBase is the GitHub Releases download base. The full asset
 	// URL is <defaultRepoBase>/<tag>/<asset>, with checksums.txt beside it.
-	defaultRepoBase = "https://github.com/ephpm/ephemerd/releases/download"
+	defaultRepoBase = "https://github.com/ephemerd/ephemerd/releases/download"
 	checksumsName   = "checksums.txt"
 
 	defaultDrainTimeout = 45 * time.Minute

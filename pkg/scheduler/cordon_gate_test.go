@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ephpm/ephemerd/pkg/providers"
+	"github.com/ephemerd/ephemerd/pkg/providers"
 )
 
 // Regression tests for issue #154: drain/cordon did not stop webhook-driven

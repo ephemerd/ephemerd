@@ -5,7 +5,7 @@ import (
 	"slices"
 	"testing"
 
-	"github.com/ephpm/ephemerd/pkg/config"
+	"github.com/ephemerd/ephemerd/pkg/config"
 )
 
 // TestPkgProxyPorts is the firewall half of the wiring. These ports are fed

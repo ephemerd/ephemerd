@@ -5,7 +5,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ephpm/ephemerd/pkg/diskspace"
+	"github.com/ephemerd/ephemerd/pkg/diskspace"
 )
 
 // Thresholds describes when image garbage collection starts and when it

@@ -14,7 +14,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ephpm/ephemerd/pkg/dind"
+	"github.com/ephemerd/ephemerd/pkg/dind"
 )
 
 // dialDindSocket returns an http.Client that connects via a Unix socket.

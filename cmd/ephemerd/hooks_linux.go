@@ -5,9 +5,9 @@ package main
 import (
 	"log/slog"
 
-	"github.com/ephpm/ephemerd/pkg/metrics"
-	"github.com/ephpm/ephemerd/pkg/runtime"
-	"github.com/ephpm/ephemerd/pkg/scheduler"
+	"github.com/ephemerd/ephemerd/pkg/metrics"
+	"github.com/ephemerd/ephemerd/pkg/runtime"
+	"github.com/ephemerd/ephemerd/pkg/scheduler"
 )
 
 // buildDispatchSamplerHooks returns the OnTaskStarted / OnTaskDestroy

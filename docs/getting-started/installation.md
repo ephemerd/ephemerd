@@ -5,7 +5,7 @@ weight: 1
 
 ## Download a release
 
-Download the latest binary for your platform from [GitHub Releases](https://github.com/ephpm/ephemerd/releases).
+Download the latest binary for your platform from [GitHub Releases](https://github.com/ephemerd/ephemerd/releases).
 
 Binaries are available for Linux (amd64, arm64), macOS (arm64), and Windows (amd64).
 
@@ -34,7 +34,7 @@ sudo ./ephemerd install --no-service
 ephemerd uses [Mage](https://magefile.org/) as its build system. With Go 1.26.1+ (as required by `go.mod`) and Mage installed:
 
 ```bash
-git clone https://github.com/ephpm/ephemerd.git
+git clone https://github.com/ephemerd/ephemerd.git
 cd ephemerd
 mage build
 ```

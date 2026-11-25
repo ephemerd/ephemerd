@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ephpm/ephemerd/pkg/providers"
+	"github.com/ephemerd/ephemerd/pkg/providers"
 )
 
 // These tests pin the graceful-drain contract: a SIGTERM (run-context

@@ -16,8 +16,8 @@ import (
 	"github.com/containerd/containerd/v2/pkg/oci"
 	ocispec "github.com/opencontainers/runtime-spec/specs-go"
 
-	"github.com/ephpm/ephemerd/pkg/cni"
-	"github.com/ephpm/ephemerd/pkg/networking"
+	"github.com/ephemerd/ephemerd/pkg/cni"
+	"github.com/ephemerd/ephemerd/pkg/networking"
 )
 
 // TestE2E_EphemerdCI runs ephemerd's own CI pipeline (`mage ci`) inside the

@@ -47,7 +47,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ephpm/ephemerd/pkg/proxies"
+	"github.com/ephemerd/ephemerd/pkg/proxies"
 )
 
 const (

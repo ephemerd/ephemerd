@@ -15,7 +15,7 @@ There are exactly two paths, chosen by the image reference:
 
 | Image | Runner comes from | Entrypoint |
 |-------|-------------------|------------|
-| A recognized official runner ref — `ghcr.io/actions/actions-runner:*` or `@<digest>`, `ghcr.io/actions/runner-images-runner:*`, and `ephpm/ephemerd:runner-ci-linux*` with or without the `docker.io/` prefix | the image itself | `/home/runner/run.sh` |
+| A recognized official runner ref — `ghcr.io/actions/actions-runner:*` or `@<digest>`, `ghcr.io/actions/runner-images-runner:*`, and `ephemerd/ephemerd:runner-ci-linux*` with or without the `docker.io/` prefix | the image itself | `/home/runner/run.sh` |
 | **Anything else** | bind-mounted by ephemerd at `/actions-runner` | `/actions-runner/run.sh` |
 
 The branch is `customImage := image != "" && !isOfficialRunnerImage(image)` (`pkg/runtime/runtime.go:805`); the allowlist is `isOfficialRunnerImage` (`pkg/runtime/runtime.go:1660`), the entrypoint switch is `runtime.go:856-863`, and the mount decision is `runtime.go:937`.
@@ -486,13 +486,13 @@ This is about *Linux* jobs. A job that asks for a Windows runner runs in a Windo
 
 ## Reference: ephemerd CI Images
 
-ephemerd's own CI uses custom runner images that pre-cache all build dependencies. These live in the [`images/`](https://github.com/ephpm/ephemerd/tree/main/images) directory and serve as a real-world example:
+ephemerd's own CI uses custom runner images that pre-cache all build dependencies. These live in the [`images/`](https://github.com/ephemerd/ephemerd/tree/main/images) directory and serve as a real-world example:
 
 | Image | Base | What it caches |
 |-------|------|----------------|
 | `runner-ci-linux` | `ghcr.io/actions/actions-runner:latest` | Go, Mage, runner archive, CNI plugins, containerd shim, runc, golangci-lint |
 | `runner-ci-windows` | `mcr.microsoft.com/windows/servercore:ltsc2025` | Go (in the tool cache, so `actions/setup-go` hits it), Mage, Docker CLI, runner archive (Windows + Linux), golangci-lint |
-| `runner-ci-windows-msvc` | `ephpm/ephemerd:runner-ci-windows` | Everything above, plus VS Build Tools 2022 (MSVC, clang-cl, Windows SDK) at `C:\BuildTools` and rustup with a pinned stable toolchain |
+| `runner-ci-windows-msvc` | `ephemerd/ephemerd:runner-ci-windows` | Everything above, plus VS Build Tools 2022 (MSVC, clang-cl, Windows SDK) at `C:\BuildTools` and rustup with a pinned stable toolchain |
 | `runner-ci-macos` | `scratch` | Runner archive (macOS), Mage, golangci-lint (cross-compiled for darwin) |
 
 Note the three different bases. Each is chosen for what it *caches*, not to
@@ -505,7 +505,7 @@ The Linux image supports multi-arch (amd64 + arm64) via `docker buildx`. Each im
 
 ### `runner-ci-windows-msvc`: the MSVC-baked Windows image
 
-`ephpm/ephemerd:runner-ci-windows-msvc` exists for repos that compile native
+`ephemerd/ephemerd:runner-ci-windows-msvc` exists for repos that compile native
 code with MSVC on the fleet — concretely, `ephpm/ephpm` (Rust + embedded PHP,
 `release.yml` / `nightly.yml` / `windows-php-check.yml`) and `ephpm/php-sdk`
 (`build.yml`). Those workflows each installed VS Build Tools per-job via the
@@ -530,10 +530,10 @@ name, as delivered by the provider):
 
 ```toml
 [runner.images.ephpm]
-windows = "ephpm/ephemerd:runner-ci-windows-msvc"
+windows = "ephemerd/ephemerd:runner-ci-windows-msvc"
 
 [runner.images.php-sdk]
-windows = "ephpm/ephemerd:runner-ci-windows-msvc"
+windows = "ephemerd/ephemerd:runner-ci-windows-msvc"
 ```
 
 **The size tradeoff is deliberate.** VS Build Tools with the Windows SDK is

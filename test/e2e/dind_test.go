@@ -100,7 +100,7 @@ format = "text"
 	// Trigger the dind-test workflow via gh CLI
 	t.Log("triggering dind-test workflow via gh CLI...")
 	ghRun := exec.CommandContext(ctx, "gh", "workflow", "run", "dind-test.yml",
-		"--repo", "ephpm/ephemerd",
+		"--repo", "ephemerd/ephemerd",
 		"--ref", "main",
 	)
 	ghRun.Env = append(os.Environ(), "GH_TOKEN="+token)
@@ -140,7 +140,7 @@ format = "text"
 func getRunStatusAfter(t *testing.T, ctx context.Context, token string, after time.Time) (status, conclusion string) {
 	t.Helper()
 	cmd := exec.CommandContext(ctx, "gh", "run", "list",
-		"--repo", "ephpm/ephemerd",
+		"--repo", "ephemerd/ephemerd",
 		"--workflow", "dind-test.yml",
 		"--limit", "5",
 		"--json", "status,conclusion,createdAt",

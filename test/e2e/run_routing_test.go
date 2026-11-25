@@ -8,8 +8,8 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/ephpm/ephemerd/pkg/vm"
-	"github.com/ephpm/ephemerd/pkg/workflow"
+	"github.com/ephemerd/ephemerd/pkg/vm"
+	"github.com/ephemerd/ephemerd/pkg/workflow"
 )
 
 // TestE2E_RunRouting_LinuxJob verifies that a workflow with runs-on: ubuntu-latest

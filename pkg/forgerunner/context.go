@@ -7,7 +7,7 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/ephpm/ephemerd/pkg/forgerpc"
+	"github.com/ephemerd/ephemerd/pkg/forgerpc"
 )
 
 // BuildEnv extracts environment variables from a forge task payload.

@@ -8,13 +8,13 @@ import (
 
 	gh "github.com/google/go-github/v72/github"
 
-	"github.com/ephpm/ephemerd/pkg/config"
-	"github.com/ephpm/ephemerd/pkg/providers"
-	githubProv "github.com/ephpm/ephemerd/pkg/providers/github"
-	"github.com/ephpm/ephemerd/pkg/runner"
-	"github.com/ephpm/ephemerd/pkg/runnerversion"
-	"github.com/ephpm/ephemerd/pkg/runtime"
-	"github.com/ephpm/ephemerd/pkg/scheduler"
+	"github.com/ephemerd/ephemerd/pkg/config"
+	"github.com/ephemerd/ephemerd/pkg/providers"
+	githubProv "github.com/ephemerd/ephemerd/pkg/providers/github"
+	"github.com/ephemerd/ephemerd/pkg/runner"
+	"github.com/ephemerd/ephemerd/pkg/runnerversion"
+	"github.com/ephemerd/ephemerd/pkg/runtime"
+	"github.com/ephemerd/ephemerd/pkg/scheduler"
 )
 
 // Self-healing runner version: the daemon-side assembly

@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/ephpm/ephemerd/pkg/workflow"
+	"github.com/ephemerd/ephemerd/pkg/workflow"
 )
 
 // configDirGuard saves and restores the package-level configDir global so

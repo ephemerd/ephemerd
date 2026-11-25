@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"log/slog"
 
-	"github.com/ephpm/ephemerd/pkg/config"
+	"github.com/ephemerd/ephemerd/pkg/config"
 )
 
 // checkKataPrereqs rejects the Kata runtime on non-Linux hosts.

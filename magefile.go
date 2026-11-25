@@ -12,11 +12,11 @@ import (
 	"github.com/magefile/mage/sh"
 
 	// mage:import build
-	build "github.com/ephpm/ephemerd/mage/build"
+	build "github.com/ephemerd/ephemerd/mage/build"
 	// mage:import download
-	download "github.com/ephpm/ephemerd/mage/download"
+	download "github.com/ephemerd/ephemerd/mage/download"
 	// mage:import manifest
-	_ "github.com/ephpm/ephemerd/mage/manifest"
+	_ "github.com/ephemerd/ephemerd/mage/manifest"
 )
 
 // Default target when running mage with no args.

@@ -16,9 +16,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ephpm/ephemerd/pkg/providers"
-	"github.com/ephpm/ephemerd/pkg/tunnel"
-	vmPkg "github.com/ephpm/ephemerd/pkg/vm"
+	"github.com/ephemerd/ephemerd/pkg/providers"
+	"github.com/ephemerd/ephemerd/pkg/tunnel"
+	vmPkg "github.com/ephemerd/ephemerd/pkg/vm"
 	gh "github.com/google/go-github/v72/github"
 )
 

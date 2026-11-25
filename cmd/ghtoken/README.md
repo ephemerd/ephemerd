@@ -20,7 +20,7 @@ export GH_TOKEN=$(./ghtoken)
 
 # Then use with gh CLI
 gh workflow run test-arm64-smoke.yml
-gh api repos/ephpm/ephemerd/actions/runs --jq '.workflow_runs[:3] | .[].status'
+gh api repos/ephemerd/ephemerd/actions/runs --jq '.workflow_runs[:3] | .[].status'
 ```
 
 ## Requirements

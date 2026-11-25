@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ephpm/ephemerd/pkg/providers"
+	"github.com/ephemerd/ephemerd/pkg/providers"
 )
 
 // TestRetryQueue_StillFailingRetryStaysEnqueued proves that when a retry

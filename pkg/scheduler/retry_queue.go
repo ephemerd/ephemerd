@@ -36,7 +36,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ephpm/ephemerd/pkg/providers"
+	"github.com/ephemerd/ephemerd/pkg/providers"
 	gh "github.com/google/go-github/v72/github"
 )
 

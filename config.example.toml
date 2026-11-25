@@ -315,7 +315,7 @@ shutdown_timeout = "5m"
 #
 # ON BY DEFAULT with no keys required. At boot and hourly the daemon
 # verifies its runner against a signed manifest published by the
-# ephpm/ephemerd release pipeline (minisign public key compiled in),
+# ephemerd/ephemerd release pipeline (minisign public key compiled in),
 # probes the runner baked into the official Linux image, counts runners
 # that register and exit without ever receiving a job (three in a row per
 # platform opens a circuit breaker and pauses provisioning), masks a stale
@@ -329,7 +329,7 @@ shutdown_timeout = "5m"
 # delivery breaks; disabling here recovers it). Everything else is tuning.
 # [runner.self_heal]
 # enabled = true
-# manifest_url = "https://github.com/ephpm/ephemerd/releases/download/runner-manifest/runner-manifest.json"
+# manifest_url = "https://github.com/ephemerd/ephemerd/releases/download/runner-manifest/runner-manifest.json"
 # channel = "stable"             # "stable" | "canary"
 # poll_interval = "6h"            # backstop only; the zero-work breaker triggers an immediate re-check
 # zero_work_window = "120s"

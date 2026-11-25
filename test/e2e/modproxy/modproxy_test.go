@@ -22,7 +22,7 @@ import (
 	"strings"
 	"testing"
 
-	goproxy "github.com/ephpm/ephemerd/pkg/proxies/go"
+	goproxy "github.com/ephemerd/ephemerd/pkg/proxies/go"
 )
 
 func TestModProxy_E2E_CacheRoundTrip(t *testing.T) {

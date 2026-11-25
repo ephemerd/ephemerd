@@ -16,8 +16,8 @@ import (
 	"github.com/containerd/containerd/v2/pkg/namespaces"
 	"github.com/containerd/containerd/v2/pkg/oci"
 
-	"github.com/ephpm/ephemerd/pkg/cni"
-	"github.com/ephpm/ephemerd/pkg/networking"
+	"github.com/ephemerd/ephemerd/pkg/cni"
+	"github.com/ephemerd/ephemerd/pkg/networking"
 	ocispec "github.com/opencontainers/runtime-spec/specs-go"
 )
 

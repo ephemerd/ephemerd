@@ -11,7 +11,7 @@ import (
 	"sync/atomic"
 	"testing"
 
-	"github.com/ephpm/ephemerd/pkg/diskspace"
+	"github.com/ephemerd/ephemerd/pkg/diskspace"
 )
 
 // httpsTestServer gives a TLS server whose client is told to trust it,

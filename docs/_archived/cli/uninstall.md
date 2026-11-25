@@ -50,7 +50,7 @@ Before removing files, uninstall runs the same cleanup as `ephemerd doctor --cle
 If you used `--keep-data`, your config and logs are preserved. Just run the install script again:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/ephpm/ephemerd/main/install.sh | sudo bash
+curl -fsSL https://raw.githubusercontent.com/ephemerd/ephemerd/main/install.sh | sudo bash
 ```
 
 The installer will detect the existing config and skip creating a new one.

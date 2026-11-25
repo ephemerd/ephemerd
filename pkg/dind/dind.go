@@ -31,10 +31,10 @@ import (
 	"github.com/containerd/containerd/v2/client"
 	"github.com/containerd/containerd/v2/core/images"
 	"github.com/containerd/containerd/v2/pkg/namespaces"
-	"github.com/ephpm/ephemerd/pkg/buildkit"
-	"github.com/ephpm/ephemerd/pkg/jobcgroup"
-	"github.com/ephpm/ephemerd/pkg/networking"
-	"github.com/ephpm/ephemerd/pkg/registrymirror"
+	"github.com/ephemerd/ephemerd/pkg/buildkit"
+	"github.com/ephemerd/ephemerd/pkg/jobcgroup"
+	"github.com/ephemerd/ephemerd/pkg/networking"
+	"github.com/ephemerd/ephemerd/pkg/registrymirror"
 )
 
 // sharedNamespace is the containerd namespace used by ephemerd for runner

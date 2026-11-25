@@ -3,7 +3,7 @@ package dind
 import (
 	"testing"
 
-	"github.com/ephpm/ephemerd/pkg/jobcgroup"
+	"github.com/ephemerd/ephemerd/pkg/jobcgroup"
 )
 
 // TestJobCgroupPrefixIsTheDindNamespacePrefix pins the coupling the job

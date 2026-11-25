@@ -9,8 +9,8 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/ephpm/ephemerd/pkg/config"
-	"github.com/ephpm/ephemerd/pkg/registrymirror"
+	"github.com/ephemerd/ephemerd/pkg/config"
+	"github.com/ephemerd/ephemerd/pkg/registrymirror"
 )
 
 // newPullOptsServer builds the minimum Server the pull paths need: an auth

@@ -7,7 +7,7 @@ import (
 
 	gh "github.com/google/go-github/v72/github"
 
-	ghclient "github.com/ephpm/ephemerd/pkg/github"
+	ghclient "github.com/ephemerd/ephemerd/pkg/github"
 )
 
 func TestName(t *testing.T) {
@@ -123,7 +123,7 @@ func TestConvertEvent_RunnerName(t *testing.T) {
 
 	ev := p.convertEvent(ghclient.JobEvent{
 		Action: "in_progress",
-		Repo:   "ephpm/ephemerd",
+		Repo:   "ephemerd/ephemerd",
 		Job:    job,
 	})
 
@@ -135,7 +135,7 @@ func TestConvertEvent_RunnerName(t *testing.T) {
 	// no runner_name — the field must stay empty, not panic.
 	ev = p.convertEvent(ghclient.JobEvent{
 		Action: "queued",
-		Repo:   "ephpm/ephemerd",
+		Repo:   "ephemerd/ephemerd",
 		Job:    &gh.WorkflowJob{ID: &id},
 	})
 	if ev.RunnerName != "" {

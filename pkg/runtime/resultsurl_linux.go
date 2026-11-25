@@ -8,7 +8,7 @@ import (
 
 	"github.com/containerd/containerd/v2/core/mount"
 	"github.com/containerd/containerd/v2/core/snapshots"
-	"github.com/ephpm/ephemerd/pkg/runner"
+	"github.com/ephemerd/ephemerd/pkg/runner"
 )
 
 // patchSnapshotRunner applies the LAN-cache patch (runner.PatchResultsURL)

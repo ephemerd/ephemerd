@@ -7,7 +7,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/ephpm/ephemerd/pkg/upgrade"
+	"github.com/ephemerd/ephemerd/pkg/upgrade"
 
 	"github.com/urfave/cli/v3"
 )

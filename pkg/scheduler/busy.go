@@ -5,10 +5,10 @@ import (
 	"time"
 
 	"github.com/containerd/containerd/v2/pkg/namespaces"
-	"github.com/ephpm/ephemerd/pkg/metrics"
-	"github.com/ephpm/ephemerd/pkg/providers"
-	"github.com/ephpm/ephemerd/pkg/runnerbusy"
-	"github.com/ephpm/ephemerd/pkg/runtime"
+	"github.com/ephemerd/ephemerd/pkg/metrics"
+	"github.com/ephemerd/ephemerd/pkg/providers"
+	"github.com/ephemerd/ephemerd/pkg/runnerbusy"
+	"github.com/ephemerd/ephemerd/pkg/runtime"
 )
 
 // The hard invariant this file enforces: NEVER DESTROY A RUNNER THAT IS

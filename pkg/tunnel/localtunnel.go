@@ -7,7 +7,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/ephpm/ephemerd/pkg/localtunnel"
+	"github.com/ephemerd/ephemerd/pkg/localtunnel"
 )
 
 const (

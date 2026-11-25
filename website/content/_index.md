@@ -3,7 +3,7 @@ title: ephemerd
 layout: hextra-home
 ---
 
-{{< hextra/hero-badge link="https://github.com/ephpm/ephemerd/releases/latest" >}}
+{{< hextra/hero-badge link="https://github.com/ephemerd/ephemerd/releases/latest" >}}
   Latest Release
 {{< /hextra/hero-badge >}}
 
@@ -21,7 +21,7 @@ layout: hextra-home
 
 <div style="margin-top: 4rem; margin-bottom: 1.5rem;">
 {{< hextra/hero-button text="Get Started" link="getting-started/installation/" >}}
-{{< hextra/hero-button text="GitHub" link="https://github.com/ephpm/ephemerd" style="alt" >}}
+{{< hextra/hero-button text="GitHub" link="https://github.com/ephemerd/ephemerd" style="alt" >}}
 </div>
 
 <div class="hx-mt-6"></div>

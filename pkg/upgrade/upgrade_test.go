@@ -33,7 +33,7 @@ func TestAssetName(t *testing.T) {
 }
 
 func TestBaseURL(t *testing.T) {
-	if got := baseURL("v0.1.7", ""); got != "https://github.com/ephpm/ephemerd/releases/download/v0.1.7" {
+	if got := baseURL("v0.1.7", ""); got != "https://github.com/ephemerd/ephemerd/releases/download/v0.1.7" {
 		t.Errorf("default baseURL = %q", got)
 	}
 	if got := baseURL("v0.1.7", "http://mirror.local/dl/"); got != "http://mirror.local/dl" {

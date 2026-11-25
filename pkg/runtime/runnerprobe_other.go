@@ -6,7 +6,7 @@ import (
 	"context"
 	"errors"
 
-	"github.com/ephpm/ephemerd/pkg/runnerversion"
+	"github.com/ephemerd/ephemerd/pkg/runnerversion"
 )
 
 // ProbeImageRunner is Linux-only: the official-image runner path (and the

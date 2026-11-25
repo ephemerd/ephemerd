@@ -15,7 +15,7 @@ import (
 	"github.com/containerd/containerd/v2/core/snapshots"
 	"github.com/containerd/containerd/v2/pkg/namespaces"
 	"github.com/containerd/errdefs"
-	"github.com/ephpm/ephemerd/pkg/runnerversion"
+	"github.com/ephemerd/ephemerd/pkg/runnerversion"
 	"github.com/opencontainers/image-spec/identity"
 )
 

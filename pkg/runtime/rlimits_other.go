@@ -6,8 +6,8 @@ import (
 	"log/slog"
 
 	"github.com/containerd/containerd/v2/pkg/oci"
-	"github.com/ephpm/ephemerd/pkg/config"
-	"github.com/ephpm/ephemerd/pkg/jobcgroup"
+	"github.com/ephemerd/ephemerd/pkg/config"
+	"github.com/ephemerd/ephemerd/pkg/jobcgroup"
 )
 
 // rlimitsOpts is a no-op on non-Linux platforms. Windows Hyper-V isolated

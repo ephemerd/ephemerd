@@ -14,7 +14,7 @@ import (
 	"strconv"
 	"syscall"
 
-	"github.com/ephpm/ephemerd/pkg/scheduler"
+	"github.com/ephemerd/ephemerd/pkg/scheduler"
 	"github.com/urfave/cli/v3"
 	"golang.org/x/crypto/ssh"
 	"golang.org/x/term"

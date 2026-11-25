@@ -73,7 +73,7 @@ func scopedBuildRef(jobID, ref string) string {
 // The Linux Docker CLI canonicalizes refs with the docker.io/ registry
 // prefix before POSTing the push, but BuildKit's containerd exporter
 // stores the image under whatever short name the build's `-t` tag
-// carried (e.g. "ephpm/ephemerd:..." with no prefix). Job-scoped forms
+// carried (e.g. "ephemerd/ephemerd:..." with no prefix). Job-scoped forms
 // are tried first — those are where this job's own builds live. The
 // unscoped fallbacks cover images staged into the buildkit namespace
 // by paths other than this job's docker build (tests, future tooling).

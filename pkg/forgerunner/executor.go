@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ephpm/ephemerd/pkg/forgerpc"
+	"github.com/ephemerd/ephemerd/pkg/forgerpc"
 )
 
 // Executor runs a single forge task: parses the workflow, executes steps,

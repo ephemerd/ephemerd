@@ -6,7 +6,7 @@
 
 Report vulnerabilities privately through GitHub's built-in security reporting:
 
-1. Go to the [Security](https://github.com/ephpm/ephemerd/security) tab of this repository
+1. Go to the [Security](https://github.com/ephemerd/ephemerd/security) tab of this repository
 2. Click **"Report a vulnerability"**
 3. Fill out the advisory form
 

@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package ephemerd.v1;
 
-option go_package = "github.com/ephpm/ephemerd/api/v1;apiv1";
+option go_package = "github.com/ephemerd/ephemerd/api/v1;apiv1";
 
 service Control {
   rpc Status(StatusRequest) returns (StatusResponse);
@@ -169,7 +169,7 @@ message UpgradeRequest {
   // release take down every node at once. Must be an explicit release tag.
   string target_version = 1;
   // url_override optionally replaces the release base URL
-  // (https://github.com/ephpm/ephemerd/releases/download/<tag>). When set,
+  // (https://github.com/ephemerd/ephemerd/releases/download/<tag>). When set,
   // the archive is fetched from <url_override>/<asset> and the checksums from
   // <url_override>/checksums.txt. For testing and air-gapped mirrors.
   string url_override = 2;

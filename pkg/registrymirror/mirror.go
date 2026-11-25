@@ -48,7 +48,7 @@ import (
 	"github.com/containerd/containerd/v2/client"
 	"github.com/containerd/containerd/v2/core/remotes"
 	"github.com/containerd/containerd/v2/core/remotes/docker"
-	"github.com/ephpm/ephemerd/pkg/config"
+	"github.com/ephemerd/ephemerd/pkg/config"
 )
 
 // Mirror is a resolved, immutable mirror policy shared by every pull path.

@@ -86,7 +86,7 @@ auto_upgrade = false
 image_override = false
 max_archive_mb = 300
 min_free_gb = 2
-auto_upgrade_pr_repo = "ephpm/ephemerd"
+auto_upgrade_pr_repo = "ephemerd/ephemerd"
 auto_upgrade_pr_deadline = "48h"
 `
 	if _, err := toml.Decode(src, &rc); err != nil {

@@ -5,7 +5,7 @@ import (
 	goruntime "runtime"
 	"time"
 
-	"github.com/ephpm/ephemerd/pkg/providers"
+	"github.com/ephemerd/ephemerd/pkg/providers"
 )
 
 // ActionsCache is the scheduler's view of the LAN Actions cache

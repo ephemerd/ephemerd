@@ -3,7 +3,7 @@ package runtime
 import (
 	"testing"
 
-	"github.com/ephpm/ephemerd/pkg/dind"
+	"github.com/ephemerd/ephemerd/pkg/dind"
 )
 
 func TestResolveRuntimeName(t *testing.T) {

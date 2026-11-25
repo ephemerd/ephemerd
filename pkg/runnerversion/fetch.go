@@ -10,7 +10,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ephpm/ephemerd/pkg/diskspace"
+	"github.com/ephemerd/ephemerd/pkg/diskspace"
 )
 
 // Fetcher downloads a runner archive into the Store with every guard the

@@ -18,8 +18,8 @@ import (
 	"testing"
 	"time"
 
-	githubpkg "github.com/ephpm/ephemerd/pkg/github"
-	"github.com/ephpm/ephemerd/pkg/tunnel"
+	githubpkg "github.com/ephemerd/ephemerd/pkg/github"
+	"github.com/ephemerd/ephemerd/pkg/tunnel"
 )
 
 const (

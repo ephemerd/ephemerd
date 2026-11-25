@@ -4,11 +4,11 @@
 # TARGETARCH is set automatically by Docker buildx.
 #
 # Build:
-#   docker buildx build --platform linux/amd64,linux/arm64 -t ephpm/ephemerd:runner-ci-linux .
+#   docker buildx build --platform linux/amd64,linux/arm64 -t ephemerd/ephemerd:runner-ci-linux .
 #
 # Use as default runner image:
 #   [runner]
-#   default_image = "ephpm/ephemerd:runner-ci-linux"
+#   default_image = "ephemerd/ephemerd:runner-ci-linux"
 
 FROM ghcr.io/actions/actions-runner:latest
 

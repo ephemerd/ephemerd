@@ -7,7 +7,7 @@ import (
 	"path/filepath"
 	"regexp"
 
-	"github.com/ephpm/ephemerd/pkg/runner"
+	"github.com/ephemerd/ephemerd/pkg/runner"
 )
 
 // The dominant path on this fleet is NOT the embedded tarball: Linux jobs

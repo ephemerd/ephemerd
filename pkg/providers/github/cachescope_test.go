@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ephpm/ephemerd/pkg/github"
+	"github.com/ephemerd/ephemerd/pkg/github"
 )
 
 func TestCacheScopeFor(t *testing.T) {

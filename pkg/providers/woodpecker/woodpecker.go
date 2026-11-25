@@ -27,7 +27,7 @@ import (
 	"fmt"
 	"log/slog"
 
-	"github.com/ephpm/ephemerd/pkg/providers"
+	"github.com/ephemerd/ephemerd/pkg/providers"
 )
 
 const defaultImage = "docker.io/woodpeckerci/woodpecker-agent:latest"

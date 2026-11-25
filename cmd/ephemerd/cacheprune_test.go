@@ -3,7 +3,7 @@ package main
 import (
 	"testing"
 
-	"github.com/ephpm/ephemerd/pkg/cacheprune"
+	"github.com/ephemerd/ephemerd/pkg/cacheprune"
 )
 
 // TestDaemonPrunable pins which caches route to the running daemon rather

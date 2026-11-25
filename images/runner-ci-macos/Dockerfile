@@ -1,7 +1,7 @@
 # CI build deps for macOS — outputs just binaries for VM overlay.
 #
 # Extract:
-#   id=$(docker create ephpm/ephemerd:runner-ci-macos-deps)
+#   id=$(docker create ephemerd/ephemerd:runner-ci-macos-deps)
 #   docker cp $id:/deps ./macos-deps
 #   docker rm $id
 #

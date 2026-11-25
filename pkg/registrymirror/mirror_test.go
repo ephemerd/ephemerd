@@ -14,7 +14,7 @@ import (
 	"testing"
 
 	"github.com/containerd/containerd/v2/core/remotes/docker"
-	"github.com/ephpm/ephemerd/pkg/config"
+	"github.com/ephemerd/ephemerd/pkg/config"
 	"github.com/opencontainers/go-digest"
 	ocispec "github.com/opencontainers/image-spec/specs-go/v1"
 )

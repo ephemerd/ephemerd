@@ -21,7 +21,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ephpm/ephemerd/pkg/networking"
+	"github.com/ephemerd/ephemerd/pkg/networking"
 	"github.com/moby/buildkit/cache/remotecache"
 	inlineremotecache "github.com/moby/buildkit/cache/remotecache/inline"
 	registryremotecache "github.com/moby/buildkit/cache/remotecache/registry"

@@ -1610,8 +1610,8 @@ type RunnerConfig struct {
 	// Images maps repo → OS → image. TOML shape:
 	//
 	//   [runner.images.ephemerd]
-	//   linux   = "ephpm/ephemerd:runner-ci-linux-amd64"
-	//   windows = "ephpm/ephemerd:runner-ci-windows"
+	//   linux   = "ephemerd/ephemerd:runner-ci-linux-amd64"
+	//   windows = "ephemerd/ephemerd:runner-ci-windows"
 	//
 	// A repo can specify just one OS — the others fall through to the
 	// provider per-OS default and then the runtime fallback.

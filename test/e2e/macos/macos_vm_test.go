@@ -11,7 +11,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ephpm/ephemerd/pkg/vm"
+	"github.com/ephemerd/ephemerd/pkg/vm"
 )
 
 // testLog returns a shared logger for macOS e2e tests.

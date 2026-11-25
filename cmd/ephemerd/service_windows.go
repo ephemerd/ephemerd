@@ -10,7 +10,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/ephpm/ephemerd/pkg/upgrade"
+	"github.com/ephemerd/ephemerd/pkg/upgrade"
 	"golang.org/x/sys/windows"
 	"golang.org/x/sys/windows/svc"
 	"golang.org/x/sys/windows/svc/mgr"

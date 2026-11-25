@@ -77,7 +77,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ephpm/ephemerd/pkg/proxies"
+	"github.com/ephemerd/ephemerd/pkg/proxies"
 )
 
 // hostGOOS is the OS this daemon runs on. Job containers share the host's

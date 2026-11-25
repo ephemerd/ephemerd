@@ -22,15 +22,15 @@ import (
 	"github.com/containerd/containerd/v2/pkg/namespaces"
 	"github.com/containerd/containerd/v2/pkg/oci"
 	"github.com/containerd/errdefs"
-	"github.com/ephpm/ephemerd/pkg/buildkit"
-	"github.com/ephpm/ephemerd/pkg/config"
-	"github.com/ephpm/ephemerd/pkg/dind"
-	"github.com/ephpm/ephemerd/pkg/imagegc"
-	"github.com/ephpm/ephemerd/pkg/jobcgroup"
-	"github.com/ephpm/ephemerd/pkg/networking"
-	"github.com/ephpm/ephemerd/pkg/proxies"
-	"github.com/ephpm/ephemerd/pkg/registrymirror"
-	"github.com/ephpm/ephemerd/pkg/runner"
+	"github.com/ephemerd/ephemerd/pkg/buildkit"
+	"github.com/ephemerd/ephemerd/pkg/config"
+	"github.com/ephemerd/ephemerd/pkg/dind"
+	"github.com/ephemerd/ephemerd/pkg/imagegc"
+	"github.com/ephemerd/ephemerd/pkg/jobcgroup"
+	"github.com/ephemerd/ephemerd/pkg/networking"
+	"github.com/ephemerd/ephemerd/pkg/proxies"
+	"github.com/ephemerd/ephemerd/pkg/registrymirror"
+	"github.com/ephemerd/ephemerd/pkg/runner"
 	craneTarball "github.com/google/go-containerregistry/pkg/v1/tarball"
 	ocispec "github.com/opencontainers/runtime-spec/specs-go"
 )
@@ -944,7 +944,7 @@ func (r *Runtime) pullImageLocked(ctx context.Context, ref string) error {
 	// ~60s and a single toolchain pull can cross the line inside one tick.
 	r.cfg.ImageGC.EnsureHeadroom(ctx)
 
-	// Qualify unqualified Docker Hub refs ("ephpm/ephemerd:tag", "alpine:3")
+	// Qualify unqualified Docker Hub refs ("ephemerd/ephemerd:tag", "alpine:3")
 	// so containerd's resolver doesn't dial the first path segment as a
 	// registry host. Refs already containing a registry (host has '.', ':',
 	// or is "localhost") pass through unchanged.
@@ -1015,7 +1015,7 @@ func (r *Runtime) touchImage(ctx context.Context, ref string) {
 
 // qualifyImageRef ensures a reference carries an explicit registry host.
 // Bare names ("alpine") become "docker.io/library/alpine"; namespaced names
-// ("ephpm/ephemerd:tag") become "docker.io/ephpm/ephemerd:tag". Refs whose
+// ("ephemerd/ephemerd:tag") become "docker.io/ephemerd/ephemerd:tag". Refs whose
 // first path segment looks like a host (contains '.' or ':', or equals
 // "localhost") are returned unchanged.
 func qualifyImageRef(ref string) string {
@@ -2303,8 +2303,8 @@ func isOfficialRunnerImage(image string) bool {
 		// as foreign images and bind-mounts /actions-runner over the rootfs,
 		// then runs /actions-runner/run.sh — which the image doesn't have,
 		// so the entrypoint exits 127 ("command not found").
-		"ephpm/ephemerd:runner-ci-linux",
-		"docker.io/ephpm/ephemerd:runner-ci-linux",
+		"ephemerd/ephemerd:runner-ci-linux",
+		"docker.io/ephemerd/ephemerd:runner-ci-linux",
 	} {
 		if strings.HasPrefix(image, prefix) {
 			return true

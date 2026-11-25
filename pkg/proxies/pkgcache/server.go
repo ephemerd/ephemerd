@@ -14,7 +14,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ephpm/ephemerd/pkg/proxies"
+	"github.com/ephemerd/ephemerd/pkg/proxies"
 )
 
 // ServerConfig configures the HTTP scaffolding shared by the npm, pip and

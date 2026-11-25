@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/containerd/containerd/v2/client"
-	"github.com/ephpm/ephemerd/pkg/diskspace"
+	"github.com/ephemerd/ephemerd/pkg/diskspace"
 )
 
 // DefaultExhaustedBackoff is how long the collector stays quiet after a pass

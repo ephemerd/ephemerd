@@ -2426,7 +2426,7 @@ func downloadFileVerified(url, dest, want string) error {
 // the asset URL), so we use a dash-separated tag.
 func linuxVirtMirrorURL(arch string) string {
 	return fmt.Sprintf(
-		"https://github.com/ephpm/ephemerd/releases/download/deps-linux-virt-%s/linux-virt-%s-%s.apk",
+		"https://github.com/ephemerd/ephemerd/releases/download/deps-linux-virt-%s/linux-virt-%s-%s.apk",
 		LinuxVirtVersion, LinuxVirtVersion, arch,
 	)
 }
